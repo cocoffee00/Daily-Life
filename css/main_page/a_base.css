@@ -31,14 +31,14 @@
 
   /* ____________________________________________________________#slideBox */
   #slideBox {
-    position: relative;
     width: 100%; height: 460px;
     background-color: #add;
   }
   .slide_area {
+    position: relative;
     width: auto; max-width: 1440px; height: 100%;
     margin: auto;
-    /* background-color: #ccc; */
+    background-color: #ccc;
   }
 
 
@@ -262,6 +262,7 @@
     background-color: #ddd;
   }
 
+
    /* ____________________________________________________________#footBox */
    #footBox {
     width: 100%; height: 668px;
@@ -272,6 +273,30 @@
     width: auto; max-width: 1280px; height: 590px;
     margin: auto;
     background-color: #ddd;
+  }
+  .news_email {
+    width: 100%; height: 250px;
+    background-color: #eee;
+  }
+  .info_tab {
+    width: 100%; height: 50px;
+    border: 1px solid #555;
+    background-color: #ccc;
+  }
+  .company_info {
+    width: 1072px; height: 163px; 
+    margin: auto; margin-top: 30px;
+    background-color: #666;
+  }
+  .info_area {
+    float: left;
+    width: 520px; height: 100%;
+    background-color: #999;
+  }
+  .service_area {
+    float: right;
+    width: 480px; height: 100%;
+    background-color: #999;
   }
 
 
