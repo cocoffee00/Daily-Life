@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* main.css */
+
+
+@import url("../main_page/a_base.css");
+@import url("../main_page/b_smartphon.css");
+@import url("../main_page/e_pc.css");
