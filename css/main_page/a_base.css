@@ -1,0 +1,283 @@
+/*  main_page / a_base.css  */
+
+@media screen {
+
+  #wrap {
+    position: relative;
+    width: 100%; height: 100%;
+  }
+
+  /* _____________________________________________________________#headBox */
+  #headBox {
+    width: 100%; height: 248px;
+    padding-top: 23px;box-sizing: border-box;
+    background-color: #daa;
+  }
+  .head_area {
+    width: auto; max-width: 1200px; height: 112px;
+    margin: auto;
+    background-color: #777;
+  }
+  .head_area_tab {
+    width: 100%; height: 60px;
+    margin-top: 25px;
+    background-color: #ccc;
+  }
+  .head_tab_inner {
+    width: auto; max-width: 1050px; height: 30px;
+    margin: auto;
+    background-color: #999;
+  }
+
+  /* ____________________________________________________________#slideBox */
+  #slideBox {
+    position: relative;
+    width: 100%; height: 460px;
+    background-color: #add;
+  }
+  .slide_area {
+    width: auto; max-width: 1440px; height: 100%;
+    margin: auto;
+    /* background-color: #ccc; */
+  }
+
+
+  .slide_indicator {
+    position: absolute; bottom: 20px; left: 0; right: 0;
+    width: 100%; height: 36px;
+    margin: auto;
+    background-color: #888;
+  }
+  .slide_indi_area {
+    float: right;
+    width: 294px; height: 36px;
+    margin-right: 10%; 
+    background-color: #ddd;
+  }
+
+
+  .slide_btn {
+    position: absolute; top: 50%; bottom: 50%; left: 50%; z-index: 10;
+    width: 100%; max-width: 1112px; height: 56px;
+    margin: auto;
+    transform:  translate(-50%);
+    background-color: #ddd;
+  }
+  .slide_next_btn { 
+    float: right;
+    width: 56px; height: 56px; 
+    background-color: #fff;
+  }
+  .slide_prev_btn { 
+    float: left;
+    width: 56px; height: 56px; 
+    background-color: #fff;
+  }
+
+  /* ____________________________________________________________#adBox */
+  #adBox {
+    display: none;
+    width: 100%; height: 90px;
+    background-color: #ddd;
+  }
+
+  /* ____________________________________________________________#sideQuick */
+  #sideQuick {
+    display: none;
+    width: 90px; height: 400px;
+    background-color: #eee;
+  }
+
+   /* ____________________________________________________________#bestBox */
+   #bestBox {
+    width: 100%; height: 720px;
+    padding-top: 60px; box-sizing: border-box;
+    background-color: #555;
+  }
+  .best_area {
+    position: relative;
+    width: auto; max-width: 1200px; height: 640px;
+    margin: auto; 
+    background-color: #eee;
+  }
+  .best_title {
+    width: 100%; height: auto;
+    margin-bottom: 50px;
+    background-color: #ddd;
+  }
+  .best_title h2 {
+    width: 160px; height: auto;
+    margin: auto; 
+    font-size: 36px; font-weight: 500;
+    background-color: #daa;
+  }
+  .best_tab {
+    width: auto; max-width: 990px; height: 40px;
+    margin: auto;
+    background-color: #add;
+  }
+  .best_tab ul {
+    width: 100%; height: auto;
+  }
+  .best_tab li {
+    float: left;
+  }
+  .best_contant {
+    position: absolute; right: 0; left: 0;
+    width: auto; max-width: 1156px; height: 420px;
+    margin: auto; margin-top: 26px;
+    background-color: #fff;
+  }
+  .best_box_btn {
+    position: absolute; top: 50%; bottom: 50%; left: 50%; z-index: 10;
+    width: 100%; max-width: 1200px;  height: 0;
+    margin: auto;
+    transform:  translate(-50%);
+  }
+  .best_next_btn { 
+    float: right;
+    width: 56px; height: 56px; 
+    background-color: #ddd;
+  }
+  .best_prev_btn { 
+    float: left;
+    width: 56px; height: 56px; 
+    background-color: #ddd;
+  }
+  .best_more_btn {
+    position: absolute; right: 0; bottom: 00px;
+    width: 150px; height: 25px;
+    background-color: #ccc;
+  }
+  
+
+
+
+
+   /* ____________________________________________________________#saleBox */
+   #saleBox {
+    width: 100%; height: 670px;
+    padding-top: 70px; box-sizing: border-box;
+    background-color: #ddd;
+  }
+  .sale_area {
+    position: relative;
+    width: auto; max-width: 1200px; height: 560px;
+    margin: auto;
+    background-color: #ccc;
+  }
+  .sale_title {
+    width: 100%; height: auto;
+    margin-bottom: 40px;
+    background-color: #777;
+  }
+  .sale_title h2 {
+    width: 160px; height: auto;
+    margin: auto; 
+    font-size: 36px; font-weight: 500;
+    background-color: #daa;
+  }
+  .slae_contant {
+    position: absolute; right: 0; left: 0;
+    width: auto; max-width: 1156px; height: 420px;
+    margin: auto; 
+    background-color: #fff;
+  }
+  .sale_box_btn {
+    position: absolute; top: 50%; bottom: 50%; left: 50%; z-index: 10;
+    width: 100%; max-width: 1200px;  height: 0;
+    margin: auto;
+    transform:  translate(-50%);
+  }
+  .sale_next_btn { 
+    float: right;
+    width: 56px; height: 56px; 
+    background-color: #ddd;
+  }
+  .sale_prev_btn { 
+    float: left;
+    width: 56px; height: 56px; 
+    background-color: #ddd;
+  }
+  .sale_more_btn {
+    position: absolute; right: 0; bottom: 0px;
+    width: 150px; height: 25px;
+    background-color: #666;
+  }
+
+
+   /* ____________________________________________________________#newBox */
+   #newBox {
+    width: 100%; height: 700px;
+    padding-top: 90px; box-sizing: border-box;
+    background-color: #eee;
+  }
+  .new_area {
+    width: auto; max-width: 1156px; height: 520px;
+    margin: auto;
+    background-color: #ddd;
+  }
+  .new_title {
+    float: left;
+    width: 330px; height: 480px;
+    background-color: #777;
+  }
+  .new_content {
+    float: right;
+    width: 766px; height: 480px;
+    background-color: #999;
+  }
+
+
+   /* ____________________________________________________________#blogBox */
+   #blogBox {
+    width: 100%; height: 460px;
+    padding-top: 80px; box-sizing: border-box;
+    background-color: #999;
+  }
+  .blog_area {
+    width: auto; max-width: 1200px; height: 300px;
+    margin: auto;
+    background-color: #777;
+  }
+  .blog_title_part {
+    float: right;
+    width: 660px; height: 300px;
+    background-color: #ddd;
+  }
+  .blog_title {
+    width: 100%; height: 34px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+  .blog_title_part span {
+    display: block;
+    width: 100%; height: 70px;
+    border-bottom: 1px solid #555;
+    background-color: #fff;
+  }
+  .blog_content {
+    float: left;
+    width: 500px; height: 300px;
+    background-color: #ddd;
+  }
+
+   /* ____________________________________________________________#footBox */
+   #footBox {
+    width: 100%; height: 668px;
+    padding-top: 60px; box-sizing: border-box;
+    background-color: #777;
+  }
+  .foot_area {
+    width: auto; max-width: 1280px; height: 590px;
+    margin: auto;
+    background-color: #ddd;
+  }
+
+
+
+
+
+
+
+}
