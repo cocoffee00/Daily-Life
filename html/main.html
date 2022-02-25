@@ -18,37 +18,74 @@
   <!-- <link rel="apple-touch-icon" href="./favicon.png"> -->
   <!-- <link rel="shortcut icon" href="../favicon.png" type="image/png"> -->
 
-  <title>main</title>
+  <title>Daily Life</title>
 </head>
 <body>
   <div id="wrap">
 
     <header id="headBox">
+
       <div class="head_area">
-        로고 및 unb
-      </div>
-      <div class="head_area_tab">
-        메뉴 탭 보더용
+        <h1 id="logo">
+          <span class="blind">daily life</span>
+          logo
+        </h1>
+
+        <nav id="navBox">
+          <h2 class="blind">page navigation</h2>
+
+          <div class="unb">
+            <h3 class="blind">사용자 설정 네비게이션</h3>
+            <ul class="clearfix">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><button type="button">언어설정</button></li>
+            </ul>
+          </div> <!-- // .unb-->
+
+          <div class="nav_search">
+            <ul>
+              <li>search</li>
+              <li><a href="#">cart</a></li>
+              <li><a href="#">mypage</a></li>
+            </ul>
+          </div> <!-- // .nav_search-->
+        </nav>
+      </div> <!-- // .head_area -->
+
+      <div class="tab_wrap">
         <div class="head_tab_inner">
           메뉴 탭 들어갈 자리
         </div>
       </div>
     </header> <!-- // #headBox -->
 
-<!-- __________________________________________________________________________ -->
+<!-- ___________________________________________________________slide_______________ -->
 
     <article id="slideBox">
       <span class="blind"><h2>슬라이드박스</h2></span>
       <div class="slide_area">
+
         <div class="slide_indicator">
-          <div class="slide_indi_area">슬라이드 인디케이터</div>
-        </div>
+          <div class="slide_indi_area">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+            </ul>
+            <div class="indi_counter">
+            </div>
+          </div> <!--// .slide_indi_area-->
+        </div> <!--// .slide_indicator-->
+
         <div class="slide_btn">
-          슬라이드 버튼
-            <div class="slide_prev_btn"><button type="button">prev</button></div>
-            <div class="slide_next_btn"><button type="button">next</button></div>
-        </div>
-      </div>
+          <div class="slide_next_btn"><button type="button">next</button></div>
+          <div class="slide_prev_btn"><button type="button">prev</button></div>
+        </div> <!--// .slide_btn-->
+
+      </div> <!--// .slide_area-->
     </article> <!-- // #slideBox-->
 
 <!-- _________________________________________________________________________ -->
@@ -63,88 +100,164 @@
       사이드 퀵 바 / 고민중
     </aside> <!-- // #sideQuick -->
 
-<!-- ________________________________________________________________________ -->
+<!-- __________________________________________________________best______________ -->
 
     <section id="bestBox">
       <div class="best_area">
-        <span class="blind"><h2>추천상품구역</h2></span>
+        <h2><span class="blind">추천상품구역</span></h2>
         <div class="best_title">
           <h2>추천상품</h2>
         </div>
 
         <div class="best_tab">
           <ul class="clearfix">
-            <li><button type="button">1</button></li>
-            <li><button type="button">2</button></li>
-            <li><button type="button">3</button></li>
-            <li><button type="button">4</button></li>
-            <li><button type="button">5</button></li>
-            <li><button type="button">6</button></li>
-            <li><button type="button">7</button></li>
+            <li><button type="button">보충제</button></li>
+            <li><button type="button">허브</button></li>
+            <li><button type="button">미용</button></li>
+            <li><button type="button">스포츠</button></li>
+            <li><button type="button">식료품</button></li>
+            <li><button type="button">유아&아동</button></li>
+            <li><button type="button">반려동물</button></li>
           </ul>
         </div> <!-- // .best_tab-->
 
-        <div class="best_contant">
-          <div class="best_box_btn">
-              <div class="best_prev_btn"><button type="button">prev</button></div>
-              <div class="best_next_btn"><button type="button">next</button></div>
-          </div> <!--// .best_box_btn-->
+        <div class="best_box_btn">
+          <div class="best_next_btn"><button type="button">next</button></div>
+          <div class="best_prev_btn"><button type="button">prev</button></div>
+        </div> <!--// .best_box_btn-->
+
+        <div class="product_list">
+          <div class="best_list_box">
+            <ul class="clearfix">
+              <li>
+                <a href="#">
+                  <div class="img_thumb"></div>
+                  <div class="list_contant"></div>
+                </a>
+              </li>
+    <!-- 리스트 위치 확인용 나중에 삭제
+              <li>
+                <a href="#">
+                  <div class="img_thumb"></div>
+                  <div class="list_contant"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_thumb"></div>
+                  <div class="list_contant"></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_thumb"></div>
+                  <div class="list_contant"></div>
+                </a>
+              </li>
+      -->             
+              </ul>
+          </div>
+        </div><!--// .best_contant-->
 
 
+
+
+        <div class="best_more_btn">
+          <a href="#">더보기</a>
         </div>
-
-        <div class="best_more_btn">더보기</div>
 
       </div> <!-- // .best_area -->
     </section> <!-- // #bestBox -->
 
-<!-- _________________________________________________________________________ -->
+<!-- _________________________________________________________sale____________ -->
 
     <section id="saleBox">
       <div class="sale_area">
         <span class="blind"><h2>세일 상품</h2></span>
 
-        <div class="sale_title">
-          <h2>세일상품</h2>
-        </div>
+        <div class="sale_title"><h2>세일상품</h2></div>
 
-        <div class="slae_contant">
+        <div class="product_list">
           <div class="sale_box_btn">
-              <div class="sale_prev_btn"><button type="button">prev</button></div>
-              <div class="sale_next_btn"><button type="button">next</button></div>
+            <div class="sale_next_btn"><button type="button">next</button></div>
+            <div class="sale_prev_btn"><button type="button">prev</button></div>
           </div> <!--// .best_box_btn-->
 
-
+          <div class="best_list_box">
+            <ul class="clearfix">
+              <li>
+                <a href="#">
+                  <div class="img_thumb"></div>
+                  <div class="list_contant"></div>
+                </a>
+              </li>
+            </ul>
+          </div><!--// .best_list_box-->
+        </div> <!--// .product_list-->
+        
+        <div class="sale_more_btn">
+          <a href="#">더보기</a>
         </div>
 
-        <div class="sale_more_btn">더보기</div>
-
-      </div>
+      </div><!--// .sale_area-->
     </section> <!-- // #saleBox -->
 
-<!-- _________________________________________________________________________ -->
+<!-- ___________________________________________________________new______________ -->
 
     <section id="newBox">
       <div class="new_area">
         <span class="blind"><h2>신상품</h2></span>
 
-        <div class="new_title"></div>
-        <div class="new_content"></div>
+        <div class="new_title_area">
+          <div class="new_title_inner">title</div>
+          <div class="new_title_btn">
+            <div class="new_next_btn"><button type="button">next</button></div>
+            <div class="new_prev_btn"><button type="button">prev</button></div>
+          </div>
+        </div><!--// .new_title_area-->
+
+        <div class="new_content_area">
+          <div class="new_list"></div>
+        </div>
+
+        <div class="bew_slide_bar"></div>
 
       </div> <!-- // .new_area-->
     </section> <!-- // #newBox-->
 
-<!-- _________________________________________________________________________ -->
+<!-- _____________________________________________________________blog_________ -->
 
     <section id="blogBox">
       <div class="blog_area">
         <span class="blind"><h2>블로그</h2></span>
 
         <div class="blog_title_part">
-          <div class="blog_title">title</div>
+          <div class="blog_title">
+            <span>title</span>
+          </div>
+
           <span><p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p></span>
+
+          <ul class="clearfix">
+            <li>
+              <button type="button">
+              <div class="contant_thumbnail"></div>
+            </button>
+          </li>
+            <li>
+              <button type="button">
+              <div class="contant_thumbnail"></div>
+            </button>
+          </li>
+            <li>
+              <button type="button">
+              <div class="contant_thumbnail"></div>
+            </button>
+          </li>
+          </ul>
         </div>
-        <div class="blog_content"></div>
+        <div class="blog_content">
+        </div>
       </div>
     </section> <!-- // #blogBox -->
 
@@ -156,11 +269,48 @@
 
         <div class="news_email">
           <span><h3>sign up for company news</h3></span>
-        </div>
-        <div class="info_tab"></div>
+          <div class="input_email">
+          </div>
+          <div class="email_describe">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium </p>
+          </div>
+        </div> <!--// .news_email-->
+        
+        <div class="info_tab">
+          <ul class="clearfix">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">family site</a></li>
+          </ul>
+
+        </div> <!--// .info_tab-->
+
+
         <div class="company_info">
-          <div class="info_area"></div>
-          <div class="service_area"></div>
+          <div class="info_area">
+            <div class="logo_area">
+            </div>
+            <span><p>Lorem ipsum, dolor sit amet consectetur</p></span>
+            <div class="social_service">
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="service_area">
+            <dl>
+              <dt><em>Lorem ipsum, dolor</em></dt>
+              <dd> sit amet consectetur</dd>
+            </dl>
+          </div>
         </div>
       </div>
     </footer> <!-- // #footBox -->
