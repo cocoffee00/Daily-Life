@@ -1,0 +1,143 @@
+@media screen {
+
+  #wrap {
+    position: relative;
+    width: 100%; height: 100%;
+  }
+
+  /* _____________________________________________________________#headBox */
+  #headBox {
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; height: 248px;
+    padding-top: 23px; box-sizing: border-box;
+    background-color: #fff;
+  }
+  .head_area {
+    width: auto; max-width: 1200px; height: 112px;
+    margin: auto; margin-bottom: 25px;
+  }
+  #logo { 
+    float: left; 
+    width: 223px; height: 65px;
+    margin-top: 47px;
+  }
+  #logo a {
+    display: block;
+    width: 100%; height: 100%;
+    background-image: url("../../img/header/logo.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+  }
+  /* ==================================================unb */
+  #navBox {
+    float: right;
+    width: 532px; height: 100%;
+    padding-top: 10px; box-sizing: border-box;
+  }
+  .unb {
+    float: right;
+    width: 240px; height: 20px;
+    margin-bottom: 46px;
+  }
+  .unb ul { width: auto; height: auto; }
+  .unb li {
+    float: left;
+    width: 80px; height: 20px;
+    padding: 0 10px 0; box-sizing: border-box;
+    border-right: 1px solid #555;
+  }
+  .unb li:last-child { border-right:0;}
+  .unb li a, .unb button {
+    width: 100%; height: 100%;
+    margin: auto;
+  }
+  .unb li p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px; color: #90A4AE;
+  }
+/* ================================================search==== */
+  .nav_search {
+    float: right;
+    width: 536px; height: 50px;
+  }
+  .nav_search ul { width: 100%; height: auto;}
+  .nav_search li {
+    float: left;
+    width: auto; height: auto;
+  }
+  .nav_search .search {
+    width: 344px; height: 50px;
+    padding: 7px 10px; margin: 0; box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 10px;
+  }
+  .nav_search input {
+    display: block;
+    float: left;
+    width: 270px; height: 34px;
+  }
+  .nav_search a {
+    display: block;
+    float: right;
+    width: 30px; height: 30px;
+    margin-right: 16px;
+  }
+  .nav_search .icon {
+    width: 30px; height: 30px;
+  }
+ .icon_area {
+    float: right;
+    margin-top: 10px;
+  }
+  .icon_area li:first-child { margin-right: 50px;}
+
+  .search .icon { 
+    background-image: url("../../img/header/search.png");
+    background-image: url("../../img/header/search.svg");
+    background-repeat: no-repeat;
+  }
+  .icon_area li:first-child {
+    background-image: url("../../img/header/cart.png");
+    background-image: url("../../img/header/cart.svg");
+    background-repeat: no-repeat;
+  }
+  .icon_area li:last-child {
+    background-image: url("../../img/header/my_page.png");
+    background-image: url("../../img/header/my_page.svg");
+    background-repeat: no-repeat;
+  }
+  /* ===============================================tab */
+  .tab_wrap {
+    width: 100%; min-width: 1440;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+  }
+  .head_tab_inner {
+    width: auto; max-width: 1050px; height: 30px;
+    margin: auto; margin-top: 10px; margin-bottom: 10px;
+  }
+  .head_tab_inner ul {
+    width: 100%; height: auto;
+  }
+  .head_tab_inner li {
+    float: left;
+    width: 175px; height: 30px;
+    padding: 5px 20px; box-sizing: border-box;
+  }
+  .head_tab_inner a {
+    display: block;
+    width: 100%; height: 100%;
+    text-align: center;
+  }
+  .head_tab_inner .icon { 
+    float: left;
+    width: 28px; height: 24px;
+    background-image: url("../../img/header/arrcodian.png");
+  }
+  .head_tab_inner span {
+    font-size: 18px; font-weight: 400;
+  }
+}
