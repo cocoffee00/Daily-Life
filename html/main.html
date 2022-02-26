@@ -23,13 +23,16 @@
 <body>
   <div id="wrap">
 
+    <!-- _______________________________________________________________head____ -->
     <header id="headBox">
 
       <div class="head_area">
+
         <h1 id="logo">
+          <a href="#" title="daily life">
           <span class="blind">daily life</span>
-          logo
-        </h1>
+          </a>
+        </h1><!--// #logo-->
 
         <nav id="navBox">
           <h2 class="blind">page navigation</h2>
@@ -37,53 +40,105 @@
           <div class="unb">
             <h3 class="blind">사용자 설정 네비게이션</h3>
             <ul class="clearfix">
-              <li><a href="#">로그인</a></li>
-              <li><a href="#">회원가입</a></li>
-              <li><button type="button">언어설정</button></li>
+              <li><a href="#"><p>로그인</p></a></li>
+              <li><a href="#"><p>회원가입</p></a></li>
+              <li><button type="button"><p>한국어</p></button></li>
+              <!-- 한국어 버튼 클릭시 언어,나라,통화 변경 가능한 모달창 show -->
             </ul>
-          </div> <!-- // .unb-->
+          </div> <!--// .unb-->
 
           <div class="nav_search">
-            <ul>
-              <li>search</li>
-              <li><a href="#">cart</a></li>
-              <li><a href="#">mypage</a></li>
+            <ul class="clearfix">
+
+              <li>
+                <div class="search"><span class="blind">search</span>
+                  <form action="#" method="get">
+                    <!-- <fieldset> -->
+                      <legend class="blind">검색하기</legend>
+                      <label for="search"></label>
+                      <input type="text" id="search" name="search" value="">
+                      <!-- 검색할때 버튼? 링크? -->
+                      <a href="#">
+                        <button type="submit">
+                          <div class="icon"></div>
+                        </button>
+                      </a>
+                  <!-- </fieldset> -->
+                </form>
+                </div><!--// .search-->
+              </li>
+              <div class="icon_area">
+                <li>
+                  <a href="#"><span class="blind">cart</span>
+                    <div class="icon cart"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><span class="blind">mypage</span>
+                    <div class="icon user"></div>
+                  </a>
+                </li>
+              </div><!--// .icon_area-->
             </ul>
           </div> <!-- // .nav_search-->
-        </nav>
+
+        </nav><!--// #navBox -->
       </div> <!-- // .head_area -->
 
       <div class="tab_wrap">
+        <h2 class="blind">메뉴 탭 네비게이션</h2>
         <div class="head_tab_inner">
-          메뉴 탭 들어갈 자리
+          <ul class="clearfix">
+            <li><a href="#">
+              <div class="icon"></div>
+              <span>전체메뉴</span>
+            </a></li>
+            <li><a href="#"><span>브랜드</span></a></li>
+            <li><a href="#"><span>기능별</span></a></li>
+            <li><a href="#"><span>베스트</span></a></li>
+            <li><a href="#"><span>선물세트</span></a></li>
+            <li><a href="#"><span>이벤트</span></a></li>
+          </ul>
+         
         </div>
       </div>
     </header> <!-- // #headBox -->
 
-<!-- ___________________________________________________________slide_______________ -->
+<!-- _________________________________________________________slide_______________ -->
 
     <article id="slideBox">
-      <span class="blind"><h2>슬라이드박스</h2></span>
+      <span class="blind"><h2>슬라이드 광고 영역</h2></span>
       <div class="slide_area">
+
+        <div class="slide_btn">
+          <div class="slide_next_btn">
+            <button type="button"><span class="blind">next</span></button>
+          </div>
+          <div class="slide_prev_btn">
+            <button type="button"><span class="blind">prev</span></button>
+          </div>
+        </div> <!--// .slide_btn-->
 
         <div class="slide_indicator">
           <div class="slide_indi_area">
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
+              <li class="action"><a href="#"><span class="blind">광고에 대한 설명 01</span></a></li>
+              <li><a href="#"><span class="blind">광고에 대한 설명 02</span></a></li>
+              <li><a href="#"><span class="blind">광고에 대한 설명 03</span></a></li>
+              <li><a href="#"><span class="blind">광고에 대한 설명 04</span></a></li>
+              <li><a href="#"><span class="blind">광고에 대한 설명 05</span></a></li>
             </ul>
-            <div class="indi_counter">
-            </div>
           </div> <!--// .slide_indi_area-->
+          <div class="indi_counter">
+            <p><em class="now">0</em>/<span class="total">0</span></p>
+          </div>
         </div> <!--// .slide_indicator-->
 
-        <div class="slide_btn">
-          <div class="slide_next_btn"><button type="button">next</button></div>
-          <div class="slide_prev_btn"><button type="button">prev</button></div>
-        </div> <!--// .slide_btn-->
+        <div class="slide_bg">
+          <!-- 광고이미지삽입 -->
+        </div><!--// .slide_bg-->
+
+    
 
       </div> <!--// .slide_area-->
     </article> <!-- // #slideBox-->
@@ -110,8 +165,9 @@
         </div>
 
         <div class="best_tab">
+          <h3><span class="blind">추천 상품 카테고리별 네비게이션</span></h3>
           <ul class="clearfix">
-            <li><button type="button">보충제</button></li>
+            <li class="action"><button type="button">보충제</button></li>
             <li><button type="button">허브</button></li>
             <li><button type="button">미용</button></li>
             <li><button type="button">스포츠</button></li>
@@ -121,50 +177,53 @@
           </ul>
         </div> <!-- // .best_tab-->
 
-        <div class="best_box_btn">
-          <div class="best_next_btn"><button type="button">next</button></div>
-          <div class="best_prev_btn"><button type="button">prev</button></div>
-        </div> <!--// .best_box_btn-->
+        <div class="product_list_btn">
+          <div class="product_next_btn">
+            <button type="button"><span class="blind">next</span></button>
+          </div>
+          <div class="product_prev_btn">
+            <button type="button"><span class="blind">prev</span></button>
+          </div>
+        </div> <!--// .product_list_btn-->
 
         <div class="product_list">
-          <div class="best_list_box">
+          <div class="product_list_box">
             <ul class="clearfix">
               <li>
-                <a href="#">
+                <a href="#"> 
+
                   <div class="img_thumb"></div>
-                  <div class="list_contant"></div>
+                  <div class="list_contant">
+                    <div class="title_inner">
+                      <span><p>brand</p></span>
+                      <span><p>title</p></span>
+                    </div>
+                    <div class="product_cart_icon">
+                      <button type="button"></button>
+                      <!--리스트 박스 전체에 링크를 걸어서 버튼을 쓸 이유가? 수정하기-->
+                    </div>
+                    <div class="product_price">
+                      <em class="now_price">10,000원</em>
+                      <p class="price">10,000원</p>
+                    </div>
+                    <div class="product_tag">
+                      tag
+                    </div>
+                  </div><!--// .list_contant-->
+
                 </a>
               </li>
-    <!-- 리스트 위치 확인용 나중에 삭제
-              <li>
-                <a href="#">
-                  <div class="img_thumb"></div>
-                  <div class="list_contant"></div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img_thumb"></div>
-                  <div class="list_contant"></div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img_thumb"></div>
-                  <div class="list_contant"></div>
-                </a>
-              </li>
-      -->             
-              </ul>
+            </ul>
           </div>
         </div><!--// .best_contant-->
 
-
-
-
-        <div class="best_more_btn">
-          <a href="#">더보기</a>
-        </div>
+        <div class="product_more_btn">
+          <span class="blind">추천상품 더보기</span>
+          <a href="#">
+            <div class="more_btn_icon"></div>
+            <span>더보기</span>
+          </a>
+        </div><!--// .product_more_btn-->
 
       </div> <!-- // .best_area -->
     </section> <!-- // #bestBox -->
@@ -177,27 +236,51 @@
 
         <div class="sale_title"><h2>세일상품</h2></div>
 
-        <div class="product_list">
-          <div class="sale_box_btn">
-            <div class="sale_next_btn"><button type="button">next</button></div>
-            <div class="sale_prev_btn"><button type="button">prev</button></div>
-          </div> <!--// .best_box_btn-->
+        <div class="product_list_btn">
+          <div class="product_next_btn">
+            <button type="button"><span class="blind">next</span></button>
+          </div>
+          <div class="product_prev_btn">
+            <button type="button"><span class="blind">prev</span></button>
+          </div>
+        </div> <!--// .product_list_btn-->
 
-          <div class="best_list_box">
+        <div class="product_list">
+          <div class="product_list_box">
             <ul class="clearfix">
               <li>
                 <a href="#">
                   <div class="img_thumb"></div>
-                  <div class="list_contant"></div>
+                  <div class="list_contant">
+                    <div class="title_inner">
+                      <span><p>brand</p></span>
+                      <span><p>title</p></span>
+                    </div>
+                    <div class="product_cart_icon">
+                      <button type="button"></button>
+                      <!--리스트 박스 전체에 링크를 걸어서 버튼을 쓸 이유가? 수정하기-->
+                    </div>
+                    <div class="product_price">
+                      <em class="now_price">10,000원</em>
+                      <p class="price">10,000원</p>
+                    </div>
+                    <div class="product_tag">
+                      tag
+                    </div>
+                  </div>
                 </a>
               </li>
             </ul>
           </div><!--// .best_list_box-->
         </div> <!--// .product_list-->
         
-        <div class="sale_more_btn">
-          <a href="#">더보기</a>
-        </div>
+        <div class="product_more_btn">
+          <span class="blind">추천상품 더보기</span>
+          <a href="#">
+            <div class="more_btn_icon"></div>
+            <span>더보기</span>
+          </a>
+        </div><!--// .product_more_btn-->
 
       </div><!--// .sale_area-->
     </section> <!-- // #saleBox -->
