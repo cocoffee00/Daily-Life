@@ -292,18 +292,43 @@
         <span class="blind"><h2>신상품</h2></span>
 
         <div class="new_title_area">
-          <div class="new_title_inner">title</div>
+          <div class="new_title_inner">
+            <h2>신상품</h2>
+
+            <div class="new_title_part">
+              <span><p>brand</p></span>
+              <span><p>title</p></span>
+              <span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque!</p></span>
+              <em class="new_price">10,000원</em>
+            </div><!--// .new_title_part-->
+
+            <div class="new_detail_btn">
+              <span class="blind">(보여지고있는)상품 자세히 보기 버튼</span>
+              <a href="#">자세히보기</a>
+            </div><!--// .new_detail_btn-->
+
+          </div><!--// .new_title_inner-->
+
           <div class="new_title_btn">
-            <div class="new_next_btn"><button type="button">next</button></div>
-            <div class="new_prev_btn"><button type="button">prev</button></div>
-          </div>
+            <div class="new_next_btn"><button type="button">
+              <i class="fa-solid fa-chevron-right"></i>
+              <span class="blind">next</span></button>
+            </div>
+            <div class="new_prev_btn"><button type="button">
+              <i class="fa-solid fa-chevron-left"></i>
+              <span class="blind">prev</span></button>
+            </div>
+          </div><!--//. new_title_btn-->
+
         </div><!--// .new_title_area-->
 
         <div class="new_content_area">
-          <div class="new_list"></div>
+          <div class="new_list">
+            이 부분 어떻게 해야할지 감이 안옴. 여기랑 하단 슬라이드 바
+          </div>
         </div>
 
-        <div class="bew_slide_bar"></div>
+        <div class="new_slide_bar"></div>
 
       </div> <!-- // .new_area-->
     </section> <!-- // #newBox-->
@@ -312,12 +337,12 @@
 
     <section id="blogBox">
       <div class="blog_area">
-        <span class="blind"><h2>블로그</h2></span>
+        <h2 class="blind">블로그</h2>
 
         <div class="blog_title_part">
           <div class="blog_title">
-            <span>title</span>
-          </div>
+            <h3>blog title</h3>
+          </div><!--// .blog_title_part-->
 
           <span><p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p></span>
 
@@ -338,9 +363,15 @@
             </button>
           </li>
           </ul>
-        </div>
+        </div><!--// .blog_title_part-->
+
         <div class="blog_content">
-        </div>
+          <div class="blog_gallery">
+            <!-- 이미지 삽입 -->
+          </div>
+        </div><!--// .blog_content-->
+
+
       </div>
     </section> <!-- // #blogBox -->
 
@@ -351,12 +382,25 @@
         <span class="blind"><h2>회사 정보 및 정책</h2></span>
 
         <div class="news_email">
-          <span><h3>sign up for company news</h3></span>
+          <h3>sign up for company news</h3>
           <div class="input_email">
-          </div>
+              <form action="#" method="get">
+                <!-- <fieldset> -->
+                  <legend class="blind">이메일보내기</legend>
+                  <label for="send_email"></label>
+                  <input type="text" id="send_email" name="send_email" value="" placeholder="Enter Email Address">
+                  <!-- 검색할때 버튼? 링크? -->
+                  <button type="send_btn">
+                    <span>sign up</span>
+                  </button>
+                <!-- </fieldset> -->
+              </form>
+          </div><!--// .input_email-->
+
           <div class="email_describe">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium </p>
-          </div>
+          </div><!--// .email_describe-->
+
         </div> <!--// .news_email-->
         
         <div class="info_tab">
@@ -374,26 +418,47 @@
 
         <div class="company_info">
           <div class="info_area">
-            <div class="logo_area">
-            </div>
-            <span><p>Lorem ipsum, dolor sit amet consectetur</p></span>
+            <h2><a href="#"><span class="blind">daily life</span></a></h2>
+            
+            <span>Lorem ipsum, dolor sit amet consectetur</span>
             <div class="social_service">
               <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
+                <li><a href="#"><span class="blind">face book</span></a></li>
+                <li><a href="#"><span class="blind">instagram</span></a></li>
+                <li><a href="#"><span class="blind">twitter</span></a></li>
+                <li><a href="#"><span class="blind">youtube</span></a></li>
               </ul>
             </div>
-          </div>
+
+          </div><!--// .info_area-->
 
 
           <div class="service_area">
-            <dl>
-              <dt><em>Lorem ipsum, dolor</em></dt>
-              <dd> sit amet consectetur</dd>
-            </dl>
-          </div>
+            <address>
+              <p> 서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구   논현동     000-00)</p>
+              <dl>
+                <div class="content_box">
+                  <dt>사업자등록번호</dt>
+                  <dd>100-00-00000</dd>
+                  <dt>통신판매업 신고</dt>
+                  <dd>강남 제 000000호</dd>
+                  </div>
+                <div class="content_box">
+                  <dt>tel</dt>
+                  <dd>02-0000-0000</dd>
+                  <dt>fax</dt>
+                  <dd>02-0000-0001</dd>
+                </div>
+                <div class="content_box">
+                <dt>email</dt>
+                <dd>daily_life@email.com</dd>
+                <dt>대표이사</dt>
+                <dd>000</dd>
+                </div>
+              </dl>
+              <p>©Copyright 2022 Daily Life crop. All rights reserved.</p>
+          </address>
+          </div><!--// .service_area-->
         </div>
       </div>
     </footer> <!-- // #footBox -->
