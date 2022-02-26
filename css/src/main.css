@@ -2,6 +2,8 @@
 /* main.css */
 
 
+@import url("../main_page/b_header.css");
+@import url("../main_page/b_slide.css");
 @import url("../main_page/a_base.css");
-@import url("../main_page/b_smartphon.css");
-@import url("../main_page/e_pc.css");
+@import url("../main_page/b_best.css");
+
