@@ -2,133 +2,10 @@
 
 @media screen {
 
-  #wrap {
-    position: relative;
-    width: 100%; height: 100%;
-  }
-
-  /* _____________________________________________________________#headBox */
-  #headBox {
-    position: fixed; top: 0; left: 0; z-index: 1000;
-    width: 100%; height: 248px;
-    padding-top: 23px; box-sizing: border-box;
-    background-color: #fff;
-  }
-  .head_area {
-    width: auto; max-width: 1200px; height: 112px;
-    margin: auto; margin-bottom: 25px;
-    background-color: #777;
-  }
-  #logo { 
-    float: left; 
-    width: 200px; height: 65px;
-    margin-top: 47px;
-    background-color: #ffd;
-  }
-  #navBox {
-    float: right;
-    width: 532px; height: 100%;
-    background-color: #ddd;
-  }
-  .unb {
-    float: right;
-    width: 180px; height: 20px;
-    margin-bottom: 26px;
-    background-color: #ccc;
-  }
-  .unb ul {
-    width: auto; height: auto;
-  }
-  .unb li {
-    float: left;
-    width: auto; height: auto;
-  }
-
-  .nav_search {
-    float: right;
-    width: 532px; height: 50px;
-    background-color: #ccc;
-  }
-  .nav_search li {
-    float: left;
-    width: auto; height: auto;
-  }
-  
-  .tab_wrap {
-    width: 100%; min-width: 1440;
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555;
-  }
-  
-  .head_tab_inner {
-    width: auto; max-width: 1050px; height: 30px;
-    margin: auto; margin-top: 10px; margin-bottom: 10px;
-    background-color: #999;
-  }
-
-  /* ____________________________________________________________#slideBox */
-  #slideBox {
-    width: 100%; height: 460px;
-    margin-top: 248px;
-    background-color: #add;
-  }
-  .slide_area {
-    position: relative;
-    width: auto; max-width: 1440px; height: 100%;
-    margin: auto;
-    background-color: #ccc;
-  }
-
-
-  .slide_indicator {
-    position: absolute; bottom: 20px; left: 0; right: 0;
-    width: 100%; height: 36px;
-    margin: auto;
-    background-color: #888;
-  }
-  .slide_indi_area {
-    float: right;
-    width: 294px; height: 36px;
-    margin-right: 10%; 
-    background-color: #ddd;
-  }
-  .slide_indi_area ul {
-    float: left;
-    width: auto; height: auto;
-  }
-  .slide_indi_area li {
-    float: left;
-    width: 16px; height: 16px;
-    background-color: #fff;
-  }
-
-  .indi_counter {
-    float: right;
-    width: 70px; height: 36px;
-    background-color: #fff;
-  }
-
-  .slide_btn {
-    position: absolute; top: 50%; bottom: 50%; left: 50%; z-index: 10;
-    width: 100%; max-width: 1112px; height: 56px;
-    margin: auto;
-    transform:  translate(-50%);
-    background-color: #ddd;
-  }
-  .slide_next_btn { 
-    float: right;
-    width: 56px; height: 56px; 
-    background-color: #fff;
-  }
-  .slide_prev_btn { 
-    float: left;
-    width: 56px; height: 56px; 
-    background-color: #fff;
-  }
 
   /* ____________________________________________________________#adBox */
   #adBox {
-    display: none;
+    /* display: none; */
     width: 100%; height: 90px;
     background-color: #ddd;
   }
@@ -141,147 +18,149 @@
   }
 
    /* ____________________________________________________________#bestBox */
-   #bestBox {
-    width: 100%; height: 720px;
-    padding-top: 60px; box-sizing: border-box;
-    background-color: #555;
-  }
-  .best_area {
-    position: relative;
-    width: auto; max-width: 1200px; height: 640px;
-    margin: auto; 
-    background-color: #eee;
-  }
-  .best_title {
-    width: 100%; height: auto;
-    margin-bottom: 50px;
-    background-color: #ddd;
-  }
-  .best_title h2 {
-    width: 160px; height: auto;
-    margin: auto; 
-    font-size: 36px; font-weight: 500;
-    background-color: #daa;
-  }
-  .best_tab {
-    width: auto; max-width: 990px; height: 40px;
-    margin: auto;
-    background-color: #add;
-  }
-  .best_tab ul {
-    width: 100%; height: 100%;
-  }
-  .best_tab li {
-    float: left;
-    width: auto; height: 40px;
-    background-color: #fff;
-  }
-  /* __________________________________________ */
-  .product_list {
-    position: absolute; right: 0; left: 0;
-    width: auto; max-width: 1156px; height: 420px;
-    margin: auto; margin-top: 26px;
-    background-color: #fff;
-  }
-  /* _____________________________________________ */
-  .best_box_btn {
+   
+
+
+  /* ======================================================product btn*/
+ 
+  .product_list_btn {
     position: absolute; top: 50%; bottom: 50%; left: 50%; z-index: 10;
     width: 100%; max-width: 1200px;  height: 0;
     margin: auto;
     transform:  translate(-50%);
   }
-  .best_next_btn { 
+  .product_next_btn { 
     float: right;
     width: 56px; height: 56px; 
-    background-color: #ddd;
   }
-  .best_prev_btn { 
+  .product_next_btn button {
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    background-image: url("../../img/common_img/next_btn_white.png");
+  }
+  .product_prev_btn { 
     float: left;
     width: 56px; height: 56px; 
-    background-color: #ddd;
   }
-  .best_more_btn {
-    position: absolute; right: 0; bottom: 00px;
+  .product_prev_btn button {
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    background-image: url("../../img/common_img/prev_btn_white.png");
+  }
+  .product_more_btn {
+    position: absolute; right: 0; bottom: 0px;
     width: 150px; height: 25px;
-    background-color: #ccc;
   }
-  /* ___________________________________ */
+  .product_more_btn a {
+    display: block;
+    width: 100%; height: 100%;
+  }
+  .more_btn_icon {
+    float: right;
+    width: 87px; height: 19px;
+    background-image: url("../../img/common_img/more_btn.png");
+    background-image: url("../../img/common_img/more_btn.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  .product_more_btn span {
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+   /* =========================================================product list*/
+   .product_list {
+    position: absolute; right: 0; left: 0;
+    width: auto; max-width: 1156px; height: 420px;
+    margin: auto; margin-top: 26px;
+    /* background-color: #ddd; */
+  }
+
   .product_list ul {
     width: 1156px; height: auto;
   }
   .product_list li{
     float: left;
     width: 250px; height: 420px;
-    margin-right: 52px;
-    box-sizing: border-box;
-    border: 1px solid #555;
+    margin-right: 52px; box-sizing: border-box;
+    /* border: 2px solid #555; */
+    border: 2px solid #ECEFF1;
+    border-radius: 10px;
   }
   .product_list li:nth-of-type(4n) { margin-right: 0;}
-  
+
+  .product_list li a {width: 100%; height: 100%;}
+
   .img_thumb {
-    width: 250px; height: 256px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    border: 1px solid #777;
+    width: 246px; height: 256px;
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    background-image: url("../../img/best/product_01.png");
   }
   .list_contant {
-    width: 212px; height: 130px;
-    margin: auto;
-    background-color: #ccc;
+    position: relative;
+    float: left;
+    width: 250px; height: 130px;
+    margin: auto; padding-left: 15px; box-sizing: border-box;
+    /* background-color: #ddd; */
   }
+  .title_inner {
+    display: inline-block;
+    width: 170px; height: 40px;
+    margin-right: 20px;
+  }
+  .title_inner span:first-child { font-size: 14px; margin-bottom: 10px;}
+  .title_inner span:last-child { 
+    width: 100%; height: auto;
+    font-size: 18px; font-weight: 700;
+  }
+  .product_cart_icon {
+    display: inline-block;
+  }
+  .product_cart_icon button{
+    width: 30px; height: 30px;
+    background-image: url("../../img/header/cart.png");
+  }
+  .product_price {
+    position: absolute; bottom: 34px;
+    width: auto; height: auto;
+  }
+  .now_price { margin-right: 10px; font-size: 20px; font-weight: 700;}
+  .price { text-decoration: line-through; font-size: 15px; color: #D50000;}
 
-
+  .product_tag {
+    position: absolute; bottom: 0;
+    width: 60px; height: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    text-align: center;
+  }
 
    /* ____________________________________________________________#saleBox */
    #saleBox {
     width: 100%; height: 670px;
     padding-top: 70px; box-sizing: border-box;
-    background-color: #ddd;
+    border-top: 1px solid #777;
   }
   .sale_area {
     position: relative;
-    width: auto; max-width: 1200px; height: 560px;
+    width: auto; max-width: 1200px; height: 580px;
     margin: auto;
-    background-color: #ccc;
+    /* background-color: #ccc; */
   }
   .sale_title {
     width: 100%; height: auto;
     margin-bottom: 40px;
-    background-color: #777;
   }
   .sale_title h2 {
-    width: 160px; height: auto;
-    margin: auto; 
+    width: 100%; height: auto;
+    text-align: center;
     font-size: 36px; font-weight: 500;
-    background-color: #daa;
   }
-  .slae_contant {
-    position: absolute; right: 0; left: 0;
-    width: auto; max-width: 1156px; height: 420px;
-    margin: auto; 
-    background-color: #fff;
-  }
-  .sale_box_btn {
-    position: absolute; top: 50%; bottom: 50%; left: 50%; z-index: 10;
-    width: 100%; max-width: 1200px;  height: 0;
-    margin: auto;
-    transform:  translate(-50%);
-  }
-  .sale_next_btn { 
-    float: right;
-    width: 56px; height: 56px; 
-    background-color: #ddd;
-  }
-  .sale_prev_btn { 
-    float: left;
-    width: 56px; height: 56px; 
-    background-color: #ddd;
-  }
-  .sale_more_btn {
-    position: absolute; right: 0; bottom: 0px;
-    width: 150px; height: 25px;
-    background-color: #666;
-  }
+
 
 
    /* ____________________________________________________________#newBox */
