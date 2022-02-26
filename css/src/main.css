@@ -2,14 +2,13 @@
 /* main.css */
 
 
-@import url("../main_page/b_header.css");
-@import url("../main_page/b_slide.css");
 @import url("../main_page/a_base.css");
-@import url("../main_page/b_best.css");
-@import url("../main_page/b_sale.css");
-@import url("../main_page/b_new.css");
-@import url("../main_page/b_blog.css");
-@import url("../main_page/b_foot.css");
-
+@import url("../main_page/b_headBox.css");
+@import url("../main_page/b_slideBox.css");
+@import url("../main_page/b_bestBox.css");
+@import url("../main_page/b_saleBox.css");
+@import url("../main_page/b_newBox.css");
+@import url("../main_page/b_blogBox.css");
+@import url("../main_page/b_footBox.css");
 
 
