@@ -60,12 +60,17 @@ li:last-child .contant_thumbnail { background-image: url("../../img/blog/blog_03
   float: left;
   width: 500px; height: 300px;
   border-radius: 10px;
-  background-color: #ddd;
+  background-color: #333;
+}
+.blog_content a {
+  display: block;
+  width: 100%; height: 100%;
 }
 .blog_gallery {
   width: 100%; height: 100%;
   border-radius: 10px;
   background-image: url("../../img/blog/blog_01.png");
 }
+
 
 }
