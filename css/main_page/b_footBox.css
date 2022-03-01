@@ -107,7 +107,7 @@
   background-position: 50% 50%;
 }
 
-.info_area span {
+.info_area .company_story {
   display: block;
   width: 100%; height: auto;
   text-align: center;
