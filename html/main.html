@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- main.html -->
-<html lang="ko-KR">
+<html lang="ko-KR" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,15 +39,15 @@
 
           <div class="unb">
             <h3 class="blind">사용자 설정 네비게이션</h3>
-            <ul class="clearfix">
-              <li><a href="#"><p>로그인</p></a></li>
+            <!-- <ul class="clearfix">
+              <li><a href="./login.html"><p>로그인</p></a></li>
               <li><a href="#"><p>회원가입</p></a></li>
               <li><button type="button"><p>한국어</p></button></li>
-              <!-- 한국어 버튼 클릭시 언어,나라,통화 변경 가능한 모달창 show -->
-            </ul>
+            </ul> -->
           </div> <!--// .unb-->
 
           <div class="nav_search">
+            <h2 class="blind">검색 및 사용자 편의 네비게이션</h2>
             <ul class="clearfix">
 
               <li>
@@ -67,18 +67,19 @@
                 </form>
                 </div><!--// .search-->
               </li>
-              <div class="icon_area">
+
                 <li>
                   <a href="#"><span class="blind">cart</span>
                     <div class="icon cart"></div>
                   </a>
                 </li>
+
                 <li>
                   <a href="#"><span class="blind">mypage</span>
                     <div class="icon user"></div>
                   </a>
                 </li>
-              </div><!--// .icon_area-->
+                
             </ul>
           </div> <!-- // .nav_search-->
 
@@ -87,21 +88,48 @@
 
       <div class="tab_wrap">
         <h2 class="blind">메뉴 탭 네비게이션</h2>
-        <div class="head_tab_inner">
+
+        <!-- <div class="head_tab_inner">
           <ul class="clearfix">
-            <li><a href="#">
-              <div class="icon"></div>
-              <span>전체메뉴</span>
-            </a></li>
-            <li><a href="#"><span>브랜드</span></a></li>
-            <li><a href="#"><span>기능별</span></a></li>
+
+            <div class="tab_title">
+            <li>
+              <button type="button"><div class="icon"></div><span>전체메뉴</span>
+              </button>
+              <div class="sub_list"></div>
+            </li>
+            </div>
+
+            <div class="tab_title">
+            <li><button type="button"><span>브랜드</span></button>
+              <div class="sub_list">
+                <a href="#">list_1_01</a>
+                <a href="#">list_1_02</a>
+                <a href="#">list_1_03</a>
+                <a href="#">list_1_04</a>
+              </div>
+            </li>
+            </div>
+
+            <div class="tab_title">
+            <li><button type="button"><span>기능별</span></button>
+              <div class="sub_list">
+              </div>
+            </li>
+            </div>
+
             <li><a href="#"><span>베스트</span></a></li>
             <li><a href="#"><span>선물세트</span></a></li>
             <li><a href="#"><span>이벤트</span></a></li>
           </ul>
-         
-        </div>
+        </div> -->
+        <!--// .head_tab_inner-->
+      </div><!--// .tab_wrap-->
+
+      <div class="modal_window">
+        <!-- js 모달 삽입 -->
       </div>
+
     </header> <!-- // #headBox -->
 
 <!-- _________________________________________________________slide_______________ -->
@@ -145,13 +173,11 @@
 
 <!-- _________________________________________________________________________ -->
 
-    <article id="adBox">
+    <article id="adBox" hidden>
       고민중
     </article> <!-- // #adBox -->
 
-
-
-    <aside id="sideQuick">
+    <aside id="sideQuick" hidden>
       사이드 퀵 바 / 고민중
     </aside> <!-- // #sideQuick -->
 
@@ -366,16 +392,18 @@
         </div><!--// .blog_title_part-->
 
         <div class="blog_content">
-          <div class="blog_gallery">
-            <!-- 이미지 삽입 -->
-          </div>
+          <a href="#">
+            <div class="blog_gallery">
+              <!-- 이미지 삽입 -->
+            </div>
+          </a>
         </div><!--// .blog_content-->
 
 
       </div>
     </section> <!-- // #blogBox -->
 
-<!-- ________________________________________________________________________ -->
+<!-- ___________________________________________________________foot_____________ -->
 
     <footer id="footBox">
       <div class="foot_area">
@@ -420,7 +448,7 @@
           <div class="info_area">
             <h2><a href="#"><span class="blind">daily life</span></a></h2>
             
-            <span>Lorem ipsum, dolor sit amet consectetur</span>
+            <span class="company_story">Lorem ipsum, dolor sit amet consectetur</span>
             <div class="social_service">
               <ul>
                 <li><a href="#"><span class="blind">face book</span></a></li>
@@ -467,7 +495,12 @@
 
   </div> <!-- // #wrap -->
 
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
   <script src="../js/common/modernizr-custom.js"></script>
+
+  <script src="../js/src/headBox_modal.js"></script>
+  <script src="../js/src/headBox_menu_tab.js"></script>
 
 </body>
 </html>
