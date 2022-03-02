@@ -9,11 +9,16 @@ jsonData.done(function(data){
   //공통변수
   const slideData = data;
   const slideBox = $('#slideBox');
+  const slideBg = $('.slide_bg');
   const slideType = 'horizontal_slide';
   const dataLen = slideData.length;
+
   let viewCover;
   let setNum = 0;
   let beforeN = setNum;
+  let timed = 1000;
+  let play;
+  let permission = true;
 
 
   //기능구현
@@ -26,14 +31,15 @@ jsonData.done(function(data){
   let slideDivSet = '<div class="view_cover"><a href="#"><span class="blind">광고 01</span></a></div>';
 
 
-  // 0.함수--------------버튼 적용
+  // 함수--------------버튼 생성
   let slideBtnFn = function (){
     let insertBtn = '<div class="slide_btn"><button type="button" class="next_btn"><span class="blind">next</span></button><button type="button" class="prev_btn"><span class="blind">prev</span></button></div>';
     slideWrapperCode.before(insertBtn);
     // 버튼은 슬라이드보다 전에 생성 (버튼-인디케이터-슬라이드)
   };//slideBtnFn()
 
-  // 1.함수----------------position 슬라이드에 이미지 및 링크 적용
+
+  // 함수----------------position 슬라이드에 이미지 및 링크 적용
   let slideDivSetFn = function(n){
     slideWrapperCode.append(slideDivSet);
     slideWrapperCode.children('div').eq(i).addClass(slideData[i].title);
@@ -49,6 +55,7 @@ jsonData.done(function(data){
       slideDiv.css({backgroundImage : 'url('+imgUrl+slideN.img+')'});
       divLink.attr({href:slideN.link});
   };//slideDivSetFn()
+
 
   // 2.함수--------- 광고위치 표시기능
   let actionFn = function(i){
@@ -67,8 +74,6 @@ jsonData.done(function(data){
         beforeN = setNum;
       })
     }
-  
-    
   };//actionFn()
 
   let i = 0;
@@ -79,7 +84,10 @@ jsonData.done(function(data){
   actionFn(setNum); // for문 생성 후 적용
   slideBtnFn(); // 버튼 생성 
 
-  //===================인디케이터
+
+
+  //===========================================인디케이터
+
   const indiWrapper = '<div class="slide_indi_ck"><ul class="slide_indicator blind_area"></ul><div class="indi_counter"><p><em class="now">0</em>/<span class="total">0</span></p></div></div>';
   let indiCode = '<li><a href="#" data-href="#"><span></span></a></li>'
 
@@ -118,7 +126,7 @@ jsonData.done(function(data){
 
   
 
-  //_______________________________________________________________//
+  //=======================================================버튼//
 
   //변수
   let nextBtn = slideBox.find('.next_btn');
@@ -143,11 +151,32 @@ jsonData.done(function(data){
     indiCatorCkFn(n);
     indiSetFn(n);
   }
-  //이벤트 버튼 클릭시 슬라이드 이동
+
+  //슬라이드가 일정 시간후 움직이도록-------------------------
+ let slideGoFn = function(){
+  play = setInterval(function(){
+    nextBtn.trigger('click');
+    }, timed*3);
+ };
+ let slideStopFn = function(){
+   clearInterval(play);
+  };
+  slideGoFn();
+ 
+  slideBox.on('mouseenter',function(){
+    slideStopFn();
+  })
+  slideBox.on('mouseleave',function(){
+    slideGoFn();
+  })
+
+
+  //이벤트 버튼 클릭시 슬라이드 이동----------------------------permission 적용하기
   nextBtn.on('click',function(e){
     e.preventDefault();
     setNum+=1;
     actionNumSetFn(setNum);
+    console.log(permission)
   });
   prevBtn.on('click',function(e){
     e.preventDefault();
