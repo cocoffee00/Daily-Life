@@ -1,0 +1,42 @@
+[
+{
+  "id" : 1,
+  "title" : "slide_ad_01",
+  "contents": "2022년을 맞아하여 더 강화된 성분과 패키지로 찾아왔습니다!",
+  "img" : "slide_ad_01.png",
+  "link" : "event_product_01.html",
+  "summary" : "2022 new product"
+  },
+  {
+  "id" : 2,
+  "title" : "slide_ad_02",
+  "contents": "육체피로, 체력저하, 눈의피로 한방에 끝내자!",
+  "img" : "slide_ad_02.png",
+  "link" : "event_product_02.html",
+  "summary" : "vitamin"
+  },
+  {
+  "id" : 3,
+  "title" : "slide_ad_03",
+  "contents": "슬라이드 광고 03 내용",
+  "img" : "slide_ad_03.png",
+  "link" : "event_product_03.html",
+  "summary" : "신상품_05"
+  },
+  {
+  "id" : 4,
+  "title" : "slide_ad_04",
+  "contents": "슬라이드 광고 04 내용",
+  "img" : "slide_ad_04.png",
+  "link" : "event_product_04.html",
+  "summary" : "신상품_04"
+  },
+  {
+  "id" :5,
+  "title" : "slide_ad_05",
+  "contents": "슬라이드 광고 05 내용",
+  "img" : "slide_ad_05.png",
+  "link" : "event_product_05.html",
+  "summary" : "신상품_03"
+  }
+]
