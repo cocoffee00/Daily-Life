@@ -1,0 +1,49 @@
+
+/* c_errorPage.css */
+
+
+
+#errorPage {
+  position: relative; top: 0; left: 0;
+  width: 100%; height: 1024px;
+}
+.error_area {
+  position: absolute; top: 50%; left: 50%; 
+  transform: translate( -50%, -50%);
+  width: 652px; height: 527px;
+}
+.error_icon_part {
+  width: 180px; height: 172px;
+  margin: auto; margin-bottom: 54px;
+  background-image: url("../../img/common_img/error_icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.error_content {
+  width: 100%; height: 168px;
+}
+.error_content h3 {
+  width: 100%; height: auto;
+  text-align: center; margin-bottom: 42px;
+  font-size: 36px; font-weight: 700;
+}
+.error_content p {
+  width: 100%; height: auto;
+  text-align: center;
+  font-size: 18px; font-weight: 400;
+}
+
+.prev_btn {
+  width: 266px; height: 60px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #304FFE;
+}
+.prev_btn a {
+  display: block;
+  width: 100%; height: 100%;
+  text-align: center;
+  font-size: 18px; line-height: 60px;
+  color: #fff; font-weight: 700;
+}
