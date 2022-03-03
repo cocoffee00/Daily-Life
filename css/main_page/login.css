@@ -1,0 +1,151 @@
+/* login.css */
+
+#loginBox { 
+  width: 100%; height: 750px; 
+  padding-top: 80px; box-sizing: border-box;
+}
+
+.login_area {
+  width: 825px; height: auto;
+  margin: auto;
+}
+.title_part {
+  width: 100%; height: 120px;
+  margin-bottom: 64px;
+  border-bottom: 1px solid #555;
+}
+.title_part h2 {
+  width: auto; height: auto;
+  font-size: 36px;
+  text-align: center;
+  line-height: 120px;
+}
+.inpit_area {
+  width: 470px; height: 452px;
+  margin: auto;
+}
+.user_input {
+  width: 100%; height: 50px;
+  margin-bottom: 24px;
+}
+.user_input input {
+  width: 100%; height: 100%;
+  padding: 5px 10px; box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+/* ____________________________________________________ */
+.user_service {
+  width: 100%; height: 25px;
+  padding-top: 5px; box-sizing: border-box;
+}
+.save_id {
+  float: left;
+  width: 120px; height: 100%;
+}
+.find_service {
+  float: right;
+  width: auto; height: 100%;
+}
+.find_user {
+  float: left;
+  width: auto; height: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.find_user:first-child {
+  padding-left: 0; border-right: 1px solid #555;
+}
+.find_user:last-child { padding-right: 0;}
+.find_service a {
+  display: block;
+  width: 100%; height: 100%;
+}
+
+.find_service a span {
+  text-align: center;
+  font-size: 16px;
+} 
+.find_service a:last-child { border-right: 0;}
+
+/* ______________________________________________ */
+.login_btn {
+  width: 100%; height: 50px;
+  margin-top: 20px; margin-bottom: 50px;
+}
+input[type="submit"] {
+  width: 100%; height: 100%;
+  border-radius: 10px;
+  color: #fff; font-size: 20px; font-weight: 700;
+  background-color: #304FFE;
+}
+/* ______________________________________________ */
+.join_part {
+  width: 100%; height: 75px;
+  border-bottom: 1px solid #555;
+}
+.join_inner {
+  float: left;
+  width: 290px; height: 50px;
+}
+.join_inner div { width: 100%; height: 25px; line-height: 25px; }
+.join_inner div:first-child {
+  font-size: 18px; font-weight: 700;
+}
+.join_inner div:last-child {
+  font-size: 14px; font-weight: 400;
+}
+.join_btn {
+  float: right;
+  width: 170px; height: 50px;
+}
+.join_btn a {
+  display: block;
+  width: 100%; height: 100%;
+  text-align: center; line-height: 50px;
+  border-radius: 10px;
+  background-color: #C1D5E0;
+}
+/* _______________________________________________________ */
+.sns_login {
+  width: 315px; height: 60px;
+  margin: auto; margin-top: 22px;
+}
+.sns_inner {
+  width: 100%; height: 30px;
+}
+.sns_title { 
+  float: left; 
+  width: 170px; height: 100%;
+  font-size: 24px; line-height: 30px;
+}
+
+.sns_inner div:nth-child(n+2){
+  float: left;
+  width: 30px; height: 30px;
+  margin-right: 27px;
+}
+.sns_inner div:last-child { margin-right: 0;}
+
+.sns_inner a {
+  display: block;
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.sns_inner div:nth-of-type(2) a {
+  background-image: url("../../img/login_join/google.png");
+}
+.sns_inner div:nth-of-type(3) a {
+  background-image: url("../../img/login_join/naver.png");
+}
+.sns_inner div:nth-of-type(4) a {
+  background-image: url("../../img/login_join/kakao.png");
+}
+.sns_login p {
+  font-size: 14px;
+  line-height: 30px;
+  word-spacing: -0.5px;
+}
