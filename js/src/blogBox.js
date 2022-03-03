@@ -1,0 +1,8 @@
+// blogBox.js
+
+(function($){
+
+  
+
+
+})(jQuery);
