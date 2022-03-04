@@ -1,0 +1,69 @@
+
+<div class="join_area">
+
+  <div class="title_part">
+    <h2>회원가입</h2>
+  </div><!--//.title_part-->
+
+  <div class="inpit_area clearfix">
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend class="blind">사용자 정보 입력</legend>
+        <div class="user_input">
+          <label for="userId"><span><p class="blind">회원가입시 사용할</p><em>이메일</em><p class="blind">주소를 입력해주세요.</p></span></label>
+          <input type="email" id="userId" name="userId" value="" placeholder="daily_life@hostname.com" required>
+        </div>
+
+        <div class="user_input">
+          <label for="userPw"><span><p class="blind">로그인시 사용할</p><em>비밀번호</em><p class="blind">를 입력해주세요.</p></span></label>
+          <input type="password" id="userPw" name="userPw" value="" placeholder="4~12자리" minLength='4'  maxlength='12' required>
+        </div>
+
+        <div class="user_input">
+          <label for="userPw2"><span><em>비밀번호확인</em><p class="blind">을 위해 다시 한번 입력해 주세요.</p></span></label>
+          <input type="password" id="userPw2" name="userPw2" value="" placeholder="4~12자리" minLength='4'  maxlength='12' required>
+        </div>
+
+        <div class="user_input">
+          <label for="userPhone"><span><em>연락처</em><p class="blind">를 입력해주세요.</p></span></label>
+          <input type="tel" id="userPhone" name="userPhone" value="" placeholder="연락처를 입력해주세요."  required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="blind">회원가입 및 취소 버튼</legend>
+        <div class="join_btn">
+         <input type="submit" value="회원가입">
+         <div class="cnacel_btn">
+           <button type="reset">취소</button>
+          </div>
+        </div>
+        
+        <div class="login_part">
+          <div class="login_inner">
+            <span>이미 계정이 있으신가요?</span>
+          </div><!--//.login_inner-->
+
+          <div class="login_btn">
+           <a href="../../html/login.html">로그인</a>
+          </div><!--//.login_btn-->
+         </div><!--//.login_part-->
+         
+         <div class="sns_join">
+           <div class="sns_inner">
+             <div class="sns_title">sns가입</div>
+             <div><a href="#"><span class="blind">google</span></a></div>
+             <div><a href="#"><span class="blind">naver</span></a></div>
+             <div><a href="#"><span class="blind">kakao</span></a></div>
+           </div>
+           <p>자주사용하는 SNS 계정을 통해 편리하게 가입하세요</p>
+         </div><!--//.sns_join-->
+       </fieldset>
+
+    </form>
+
+  </div><!--// .inpit_area-->
+
+  
+</div><!--// .join_area-->
