@@ -12,7 +12,7 @@ const unb = navBox.children('.unb');
 const modalWindow = $('.modal_window');
 
 // unb안에 ul,li만들기
-const mkUnb =  '<ul class="clearfix"><li><a href="./login.html"><p>로그인</p></a></li><li><a href="#"><p>회원가입</p></a></li><li><button type="button"><p>한국어</p></button></li></ul>'
+const mkUnb =  '<ul class="clearfix"><li><a href="./login.html"><p>로그인</p></a></li><li><a href="./join_page.html"><p>회원가입</p></a></li><li><button type="button"><p>한국어</p></button></li></ul>'
 unb.append(mkUnb);
 
 // 모달 만들기
