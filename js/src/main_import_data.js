@@ -11,9 +11,15 @@
   let importPage = ['headBox.html','footBox.html'];
 
   //기능수행
+
+  // 헤드박스 정리 수정중
+  // headBox.load(baseUrl+importPage[0],function(){
+  //   body.append('<script src="../js/src/headBox.js"></script>');
+  // });
   headBox.load(baseUrl+importPage[0],function(){
     body.append('<script src="../js/src/headBox_modal.js"></script><script src="../js/src/headBox_menu_tab.js"></script>');
   });
+
   // js: 모달이랑 탭기능이랑 합칠지 고민
   footBox.load(baseUrl+importPage[1]);
 
@@ -48,6 +54,8 @@
     selector.load(mainUrl+importMain[idx],function(){
       if( idx === 0){
         body.append('<script src="../js/src/slideBox.js" class="pc_slide"></script>');
+      }else if ( idx === 1) {
+        body.append('<script src="../js/src/bestBox.js" class="pc_slide"></script>')
       }
     });
   });
