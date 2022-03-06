@@ -135,8 +135,9 @@
 
 .sub_list {
   display: none;
-  position: absolute; top: 248px; right: 0; left: 0; margin: auto;
+  position: absolute; top: 225px; right: 0; left: 0; z-index: 10;
   width: 1050px; height: auto;
+  margin: auto;
   background-color: #aff;
 }
 .head_tab_inner .sub_list a {
