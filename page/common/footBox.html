@@ -1,26 +1,24 @@
 <div class="foot_area">
-  <span class="blind"><h2>회사 정보 및 정책</h2></span>
+  <h2 class="blind">회사 정보 및 정책</h2>
 
   <div class="news_email">
-    <h3>sign up for company news</h3>
+    <h3 class="blind">회사 소개 및 정책사항(문구수정 필)</h3>
     <div class="input_email">
         <form action="#" method="get">
-          <!-- <fieldset> -->
-            <legend class="blind">이메일보내기</legend>
-            <label for="send_email"></label>
-            <input type="text" id="send_email" name="send_email" value="" placeholder="Enter Email Address">
-            <!-- 검색할때 버튼? 링크? -->
-            <button type="send_btn">
-              <span>sign up</span>
-            </button>
-          <!-- </fieldset> -->
+          <fieldset>
+            <legend>sign up for company  news</legend>
+            <label for="send_email" class="blind">이메일 입력</label>
+            <div class="email_wrap">
+              <input type="email" id="send_email" name="send_email" value="" placeholder="Enter Email Address">
+            <button type="button">sign up</button> 
+            </div>
+          </fieldset>
         </form>
     </div><!--// .input_email-->
 
     <div class="email_describe">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium </p>
+      <p>이메일을 통해 할인행사 정보를 가장 먼저 받아보세요</p>
     </div><!--// .email_describe-->
-
   </div> <!--// .news_email-->
   
   <div class="info_tab">
@@ -38,15 +36,15 @@
 
   <div class="company_info">
     <div class="info_area">
-      <h2><a href="../../index.html"><span class="blind">daily life</span></a></h2>
+      <h2><a href="../../html/main_v1.html"><span class="blind">daily life</span></a></h2>
       
       <span class="company_story">Lorem ipsum, dolor sit amet consectetur</span>
-      <div class="social_service">
+      <div class="social_service blind_area">
         <ul>
-          <li><a href="#"><span class="blind">face book</span></a></li>
-          <li><a href="#"><span class="blind">instagram</span></a></li>
-          <li><a href="#"><span class="blind">twitter</span></a></li>
-          <li><a href="#"><span class="blind">youtube</span></a></li>
+          <li><a href="#"><span>face book</span></a></li>
+          <li><a href="#"><span>instagram</span></a></li>
+          <li><a href="#"><span>twitter</span></a></li>
+          <li><a href="#"><span>youtube</span></a></li>
         </ul>
       </div>
 
@@ -56,27 +54,27 @@
     <div class="service_area">
       <address>
         <p> 서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구   논현동     000-00)</p>
-        <dl>
-          <div class="content_box">
+        <div>
+          <dl class="content_box">
             <dt>사업자등록번호</dt>
             <dd>100-00-00000</dd>
             <dt>통신판매업 신고</dt>
             <dd>강남 제 000000호</dd>
-            </div>
-          <div class="content_box">
+            </dl>
+          <dl class="content_box">
             <dt>tel</dt>
             <dd>02-0000-0000</dd>
             <dt>fax</dt>
             <dd>02-0000-0001</dd>
-          </div>
-          <div class="content_box">
+          </dl>
+          <dl class="content_box">
           <dt>email</dt>
           <dd>daily_life@email.com</dd>
           <dt>대표이사</dt>
           <dd>000</dd>
-          </div>
-        </dl>
-        <p>©Copyright 2022 Daily Life crop. All rights reserved.</p>
+          </dl>
+        </div>
+        <span class="blind">Copyright</span><p>© 2022 Daily Life crop. All rights reserved.</p>
     </address>
     </div><!--// .service_area-->
   </div>
