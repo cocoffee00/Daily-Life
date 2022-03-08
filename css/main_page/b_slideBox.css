@@ -1,8 +1,8 @@
 /* b_slide.css */
 
 @media screen {
+
   #wrap {
-    /* position: relative; */
     width: 100%; height: 100%;
   }
 
@@ -12,12 +12,6 @@
     width: 100%; height: 460px;
     margin-top: 248px;
   }
-  .slide_area {
-    position: relative;
-    width:100%; max-width: 1440px; height: 100%;
-    margin: auto;
-    background-color: #ccc;
-  }
 
 /* ==========================================================btn */
   .slide_btn {
@@ -25,7 +19,6 @@
     width: 100%; max-width: 1112px; height: 0;
     margin: auto;
     transform:  translate(-50%);
-    background-color: #ddd;
   }
   .slide_btn button { 
     float: right;
@@ -46,6 +39,7 @@
   }
 
   .slide_btn button:hover { border-radius: 50%; background-color: #222; transform: scale(1.3);}
+
   .slide_btn button:focus { 
     box-sizing: border-box; 
     border-radius: 50%; 
@@ -57,9 +51,7 @@
     position: absolute; bottom: 20px; right: 15%; z-index: 150;
     width: 350px; height: 36px;
   }
-  .slide_indicator {
-    width: auto; height: auto;
-  }
+  .slide_indicator { width: auto; height: auto; }
  
   .slide_indicator li {
     float: left;
@@ -67,12 +59,11 @@
     margin-right: 30px; margin-top: 10px;
   }
   .slide_indicator li a {
-    display: block;
-    width: 100%; height: 100%;
     border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
   }
-  .slide_indicator li a:hover { background-color: #C1D5E0;}
+  .slide_indicator li a:hover { background-color: #90A4AE;}
   .slide_indicator li a:focus { outline: 7px solid #D50000 }
 
   .slide_indicator li:last-child { margin-right: 0;}
@@ -85,18 +76,21 @@
     margin-right: 10px;
     border-radius: 20px;
     background-color: #fff;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
   } 
   
   .indi_counter p {
-    width: 30px; height: 100%;
+    width: 45px; height: 100%;
     margin: auto;
     line-height: 36px;
   }
   .indi_counter .now {
     font-weight: 700;
+    margin: 0 5px;
   }
   .indi_counter .total {
     font-weight: 500; 
+    margin-left: 5px;
   }
   /* =====================================================slide bg */
   .slide_bg {
@@ -110,13 +104,7 @@
     display: none;
     position: absolute; z-index: 100;
     width: 100%; height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  background-position: 50% 50%;
   }
   .view_cover.action { display: block; z-index: 20;}
-  .view_cover a {
-    display: block;
-    width: 100%; height: 100%;
-  } 
+  
 }
