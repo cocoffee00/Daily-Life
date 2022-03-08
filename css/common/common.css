@@ -10,13 +10,31 @@
   width: 0; height: 0;
   overflow: hidden;
 }
-
-
 .clearfix::after {
   content: ""; display: block; width: 100%; height: 0; clear: both;
 }
 
 fieldset { border: 0; padding: 0; margin: 0;}
+
 input { padding: 0; border: 0; box-sizing: border-box;}
 
 address { font-style: normal;}
+
+.img_area {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.img_area_sz_auto button, .img_area_sz_auto a {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+}
+
+.img_area a { display: block; }
+
+.a_set li a, .a_set a, .a_set button { display: block; width: 100%; height: 100%; }
+
+.gray_bottom_line { border-bottom: 1px solid #90A4AE; }
+
+.mg_right_zero { margin-right: 0;}
