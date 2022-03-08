@@ -28,7 +28,7 @@ jsonData.done(function(data){
   let slideWrapperCode = slideBox.find('.slide_wrapper');
   slideWrapperCode.addClass('position_slide');
 
-  let slideDivSet = '<div class="view_cover"><a href="#"><span class="blind">광고 01</span></a></div>';
+  let slideDivSet = '<div class="view_cover img_area a_set"><a href="#"><span class="blind">광고 01</span></a></div>';
 
 
   // 함수--------------버튼 생성
@@ -88,7 +88,7 @@ jsonData.done(function(data){
 
   //===========================================인디케이터
 
-  const indiWrapper = '<div class="slide_indi_ck"><ul class="slide_indicator blind_area"></ul><div class="indi_counter"><p><em class="now">0</em>/<span class="total">0</span></p></div></div>';
+  const indiWrapper = '<div class="slide_indi_ck"><ul class="slide_indicator blind_area a_set"></ul><div class="indi_counter"><p><em class="now">0</em>/<span class="total">0</span></p></div></div>';
   let indiCode = '<li><a href="#" data-href="#"><span></span></a></li>'
 
   slideWrapperCode.before(indiWrapper);
