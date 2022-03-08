@@ -1,70 +1,48 @@
-/*  main_page / a_base.css  */
+/* css / main_page / a_base.css  */
 
 @media screen {
 
   #wrap {
-    /* position: relative; */
     width: 100%; height: 100%;
   }
-/*       !!!!!단위, 변수, 포커스, 호버등 추가, 코드 정리 + 수정하기!!!!       */
 
-  /* ____________________________________________________________#adBox */
-  #adBox {
-    display: none;
-    width: 100%; height: 90px;
-    background-color: #ddd;
-  }
-
-  /* ____________________________________________________________#sideQuick */
-  #sideQuick {
-    display: none;
-    width: 90px; height: 400px;
-    background-color: #eee;
-  }
-
-  /*                               common                                */
+  /* common */
   /* ======================================================product btn*/
  
   .product_list_btn {
     position: absolute; top: 50%; bottom: 50%; left: 50%; z-index: 10;
     width: 100%; max-width: 1200px;  height: 0;
     margin: auto;
-    transform:  translate(-50%);
+    transform: translate(-50%);
   }
-  .product_next_btn { 
-    float: right;
-    width: 56px; height: 56px; 
-  }
-  .product_next_btn button {
+  .product_list_btn button {
     width: 100%; height: 100%;
     border-radius: 50%;
-    background-image: url("../../img/common_img/next_btn_white.png");
   }
-  .product_prev_btn { 
-    float: left;
-    width: 56px; height: 56px; 
+  .product_next_btn, .product_prev_btn { width: 56px; height: 56px; }
+
+  .product_next_btn { float: right; }
+  .product_prev_btn { float: left;  }
+
+  .product_next_btn button { 
+    background-image: url("../../img/common_img/next_btn_white.png");
+    background-image: url("../../img/common_img/next_btn_white.svg");
   }
   .product_prev_btn button {
-    width: 100%; height: 100%;
-    border-radius: 50%;
     background-image: url("../../img/common_img/prev_btn_white.png");
+    background-image: url("../../img/common_img/prev_btn_white.svg");
   }
   .product_more_btn {
     position: absolute; right: 0; bottom: 0px;
     width: 150px; height: 25px;
   }
-  .product_more_btn a {
-    display: block;
-    width: 100%; height: 100%;
-  }
+  .product_more_btn a { display: block; width: 100%; height: 100%; }
+
   .more_btn_icon {
     float: right;
     width: 87px; height: 19px;
     background-image: url("../../img/common_img/more_btn.png");
     background-image: url("../../img/common_img/more_btn.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
   }
   .product_more_btn span {
     display: block;
@@ -78,15 +56,13 @@
     position: absolute; right: 0; left: 0;
     width: auto; max-width: 1156px; height: 420px;
     margin: auto; margin-top: 26px;
-    /* background-color: #ddd; */
   }
   .product_list_box {
     width: 100%; height: 100%;
-    /* background-color: #eee; */
     overflow: hidden;
   }
   .product_list ul {
-    width: 1156px; height: auto;
+    width: 1156px; height: 420px;
   }
   .product_list li{
     float: left;
@@ -97,27 +73,24 @@
   }
   .product_list li:nth-of-type(4n) { margin-right: 0;}
 
-  .product_list li a { width: 100%; height: 100%;}
   .a_inner { width: 248px; height: 420px; }
+
+  /* -----------------------------------상품 이미지 */
   .img_thumb {
     width: 248px; height: 256px;
     margin-bottom: 20px; 
     border-radius: 10px;
-    /* background-image: url("../../img/best/product_01.png"); */
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
   }
+  /* -----------------------------------상품 내부 요소 */
   .list_contant {
     position: relative;
     float: left;
     width: 248px; height: 130px;
     margin: auto; padding-left: 15px; box-sizing: border-box;
-    /* background-color: #ddd; */
   }
   .title_inner {
     display: inline-block;
-    width: 170px; height: 40px;
+    width: 100%; height: 40px;
     margin-right: 20px;
   }
   .title_inner span:first-child { font-size: 14px; margin-bottom: 10px;}
@@ -128,17 +101,15 @@
   .product_cart_icon {
     display: inline-block;
   }
-  .product_cart_icon button{
-    width: 30px; height: 30px;
-    /* background-image: url("../../img/header/cart.png"); */
-  }
   .product_price {
     position: absolute; bottom: 34px;
-    width: auto; height: auto;
+    width: auto; height: 40px;
   }
   .now_price { margin-right: 10px; font-size: 20px; font-weight: 700;}
   .price { text-decoration: line-through; font-size: 15px; color: #D50000;}
 
+  /* ------------------------------상품 태그 부분 작성하기 */
+  
   .product_tag {
     display: none;
     position: absolute; bottom: 0;
@@ -147,17 +118,5 @@
     border-radius: 10px;
     text-align: center;
   }
-/* ======================================================================= */
-
-
-
-
-   /* ____________________________________________________________#footBox */
-   
-
-
-
-
-
 
 }
