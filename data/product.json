@@ -6,7 +6,8 @@
     "image" : "product_01.png",
     "category" : "보충제",
     "price" : "28,400원",
-    "sale" : "0",
+    "sale" : "",
+    "tag" : "best",
     "stock" : "8"},
     
     {"id" : "p_code_002",
@@ -16,7 +17,8 @@
     "category" : "보충제",
     "image" : "product_02.png",
     "price" : "58,800원",
-    "sale" : "0",
+    "sale" : "",
+    "tag" : ["new","best"],
     "stock" : "2"},
     
     {"id" : "p_code_003",
@@ -36,7 +38,7 @@
     "category" : "보충제",
     "image" : "product_04.png",
     "price" : "14,524원",
-    "sale" : "0",
+    "sale" : "",
     "stock" : "5"},
     
     {"id" : "p_code_005",
@@ -56,7 +58,7 @@
     "category" : "목욕",
     "image" : "product_06.png",
     "price" : "9,683원",
-    "sale" : "0",
+    "sale" : "",
     "stock" : "25"},
     
     {"id" : "p_code_007",
@@ -66,7 +68,7 @@
     "category" : "식료품",
     "image" : "product_07.png",
     "price" : "6,051원",
-    "sale" : "4,841",
+    "sale" : "4,841원",
     "stock" : "1"},
     
     {"id" : "p_code_008",
@@ -76,7 +78,7 @@
     "category" : "스포츠",
     "image" : "product_08.png",
     "price" : "26,628원",
-    "sale" : "0",
+    "sale" : "",
     "stock" : "6"},
 
     {"id" : "p_code_009",
@@ -86,7 +88,7 @@
     "category" : "유아&아동",
     "image" : "product_09.png",
     "price" : "8,472원",
-    "sale" : "0",
+    "sale" : "",
     "stock" : "42"},
   
     {"id" : "p_code_010",
@@ -96,7 +98,7 @@
     "category" : "반려동물",
     "image" : "product_10.png",
     "price" : "8,472원",
-    "sale" : "0",
+    "sale" : "",
     "stock" : "6"},
 
     {"id" : "p_code_011",
@@ -106,7 +108,7 @@
     "category" : "유아&아동",
     "image" : "product_11.png",
     "price" : "13,241원",
-    "sale" : "0",
+    "sale" : "",
     "stock" : "10"},
 
     {"id" : "p_code_012",
@@ -116,7 +118,7 @@
     "category" : "반려동물",
     "image" : "product_12.png",
     "price" : "37,577원",
-    "sale" : "0",
+    "sale" : "",
     "stock" : "9"},
       
       {"id" : "p_code_013",
@@ -126,7 +128,7 @@
       "category" : "반려동물",
       "image" : "product_13.png",
       "price" : "9,683원",
-      "sale" : "0",
+      "sale" : "",
       "stock" : "5"},
       
       {"id" : "p_code_014",
@@ -156,7 +158,7 @@
       "category" : "미용",
       "image" : "product_16.png",
       "price" : "4,024원",
-      "sale" : "0",
+      "sale" : "",
       "stock" : "45"},
       
       {"id" : "p_code_017",
