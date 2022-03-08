@@ -40,9 +40,10 @@ $.ajax({url:'../data/product.json'}).done(function(data){
 // 불러온 json기반으로 레이아웃 구성하고 배치하기________________________________
 
       var bestBox = $('#bestBox');
+      var bestArea = bestBox.children('.best_area');
     
     // #bestBox 안에 들어갈 주요 클래스 구역 만들기
-      bestBox.html('<h2><span class="blind">추천상품구역</span></h2><div class="best_title"><h2>추천상품</h2></div><div class="best_tab"></div><div class="product_list_btn"></div><div class="product_list"></div><div class="product_more_btn"></div>');
+      bestBox.html('<div class="best_area"><div class="best_title"><h2>추천상품</h2></div><div class="best_tab"></div><div class="product_list_btn"></div><div class="product_list a_set"></div><div class="product_more_btn"></div></div>');
     
       var bestTab = bestBox.find('.best_tab');
       var bestListBtn = bestBox.find('.product_list_btn'); // 추가 구성하기
@@ -81,6 +82,19 @@ $.ajax({url:'../data/product.json'}).done(function(data){
     // 상품 리스트 내용 구성하기__________________________________________________
     var prodListBox = prodList.find('.product_list_box');
 
+
+    //++++++++++++ 이전,다음 버튼 + 슬라이드 작성하기
+    var btnDiv = '<div class="product_next_btn"><button type="button"><span class="blind">next</span></button></div><div class="product_prev_btn"><button type="button"><span class="blind">prev</span></button></div>';
+    bestListBtn.append(btnDiv);
+
+    var nextBtn = bestListBtn.find('.product_next_btn');
+    var prevBtn = bestListBtn.find('.product_prev_btn');
+
+    nextBtn.on('click',function(e){
+      e.preventDefault();
+    });
+    //++++++++++++
+    
     prodListBox.html('<ul class="clearfix tab_list"></ul>');
     var tabList = prodListBox.find('.tab_list');
 
@@ -90,7 +104,7 @@ $.ajax({url:'../data/product.json'}).done(function(data){
       tabMenuFn(k); //카테고리별 일치하는 배열들만 가져옴
       tabList.empty(); //탭 누를때마다 그 전에 있던 구성들을 비워줘야함
 
-      var listBoxSet = '<li><a href="#"><div class="a_inner"><div class="img_thumb"></div><div class="list_contant"><div class="title_inner"><span><p class="brand"></p></span><span><p class="title"></p></span></div><div class="product_price"><em class="now_price"></em><p class="price"></p></div><div class="product_tag"></div></div></div></a></li>';
+      var listBoxSet = '<li><a href="#"><div class="a_inner"><div class="img_thumb img_area"></div><div class="list_contant"><div class="title_inner"><span><p class="brand"></p></span><span><p class="title"></p></span></div><div class="product_price"><em class="now_price"></em><p class="price"></p></div><div class="product_tag"></div></div></div></a></li>';
 
       var a = 0;
       var tabSetLen = tabMenuSet.length;
@@ -107,9 +121,20 @@ $.ajax({url:'../data/product.json'}).done(function(data){
         liIdx.find('.brand').text(tSet.brand);
         liIdx.find('.title').text(tSet.product_name);
         liIdx.find('.now_price').text(tSet.price);
+        
+        liIdx.find('.price').text(tSet.sale);
+
         liIdx.find('.img_thumb').css({backgroundImage :'url('+ url+tSet.image+')'});
         // liIdx.find('a').attr({hrefText}); // 개별 아이템 상세페이지 링크 추가하기
       }//for
+
+
+      //+++++++++++++++++++++++++++++++++
+      var horizonLi = tabList.find('li');
+      var cloneDiv = function() {horizonLi.eq(-1).clone();
+      }
+      tabList.prepend(cloneDiv);
+      //+++++++++++++++++++++++++++++++++
 
     }; // tabMenuSetFn()
     
@@ -127,6 +152,13 @@ $.ajax({url:'../data/product.json'}).done(function(data){
       
     }) // tabBtn.on()
 
+
+    // 더보기 버튼 클릭시 페이지 이동(일단 에러페이지로 연결)____________________________
+
+    var morebtnArea = '<span class="blind">추천상품 더보기</span><a href="./errorPage.html"><div class="more_btn_icon img_area"></div><span>더보기</span></a>';
+    prodMoreBtn.append(morebtnArea);
+
+    
   
 
 
