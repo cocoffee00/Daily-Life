@@ -1,17 +1,19 @@
 
-
+// login_joinBox.js
+// login,join js 통합
 
 (function($){
 
-const body = $('body');
-const headBox = $('#headBox');
-const loginBox = $('#loginBox');
-const joinBox = $('#joinBox');
-const footBox = $('#footBox');
+// 변수
+var body = $('body');
+var headBox = $('#headBox');
+var loginBox = $('#loginBox');
+var joinBox = $('#joinBox');
+var footBox = $('#footBox');
 
-const baseUrl = '../page/common/';
-const mainUrl = '../page/main/';
-const importPage = ['headBox.html','loginBox.html','joinBox.html','footBox.html'];
+var baseUrl = '../page/common/';
+var mainUrl = '../page/main/';
+var importPage = ['headBox.html','loginBox.html','joinBox.html','footBox.html'];
 
 // headBox.html 불러오기
 headBox.load(baseUrl + importPage[0],function(){
