@@ -8,10 +8,23 @@
 
 //변수
 
-const tabWrap = $('.tab_wrap');
+var tabWrap = $('.tab_wrap');
 
-const mkTabAccodian = '<div class="head_tab_inner"><ul class="clearfix"><li><div class="tab_title"><button type="button"><span>전체메뉴</span></button><div class="sub_list"><a href="#">test_01</a></div></div></li><li><div class="tab_title"><button type="button"><span>브랜드</span></button><div class="sub_list"><a href="#">list_1_01</a><a href="#">list_1_02</a><a href="#">list_1_03</a><a href="#">list_1_04</a></div></div></li><li><div class="tab_title"><button type="button"><span>기능별</span></button><div class="sub_list"><a href="#">test</a><a href="#">list_1_02</a></div></div></li>    <li><a href="#"><span>베스트</span></a></li><li><a href="#"><span>선물세트</span></a></li><li><a href="#"><span>이벤트</span></a></li></ul></div></div>';
-tabWrap.append(mkTabAccodian);
+var tabAccodianSet = '<div class="head_tab_inner"><ul class="clearfix"></ul></div>';
+tabWrap.html(tabAccodianSet);
+var tabUl = tabWrap.find('ul');
+
+var fullMenuSet = '<li><div class="tab_title"><button type="button"><span>전체메뉴</span></button><div class="sub_list"><a href="#">test_01</a></div></div></li>'
+tabUl.append(fullMenuSet);
+
+var brandSet ='<li><div class="tab_title"><button type="button"><span>브랜드</span></button><div class="sub_list"><a href="#">list_1_01</a><a href="#">list_1_02</a><a href="#">list_1_03</a><a href="#">list_1_04</a></div></div></li>'
+tabUl.append(brandSet);
+
+var functionSet = '<li><div class="tab_title"><button type="button"><span>기능별</span></button><div class="sub_list"><a href="#">test</a><a href="#">list_1_02</a></div></div></li>'
+tabUl.append(functionSet);
+
+var etcSet = '<li><a href="#"><span>베스트</span></a></li><li><a href="#"><span>선물세트</span></a></li><li><a href="#"><span>이벤트</span></a></li>';
+tabUl.append(etcSet);
 
 var tabTitle = tabWrap.find('.tab_title');
 var tabSub = tabWrap.find('.sub_list');
