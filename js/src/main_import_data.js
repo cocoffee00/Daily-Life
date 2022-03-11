@@ -57,6 +57,8 @@
         body.append('<script src="../js/src/slideBox.js" class="pc_slide"></script>');
       }else if ( idx === 1) {
         body.append('<script src="../js/src/bestBox.js" class="pc_slide"></script>')
+      }else if ( idx === 2) {
+        body.append('<script src="../js/src/saleBox.js" class="pc_slide"></script>')
       }else if ( idx === 4) {
         body.append('<script src="../js/src/blogBox.js" class="pc_slide"></script>')
       }
