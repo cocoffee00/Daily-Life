@@ -67,14 +67,24 @@
 
 .new_content_area {
   float: right;
+  display: flex;
+  justify-content: space-between;
   width: 766px; height: 480px;
-  background-color: #999;
+  /* background-color: #999; */
 }
 .new_list {
-  float: left;
   width: 334px; height: 400px;
   margin-top: 40px;
-  background-color: #777;
+  border-radius: 10px;
+  /* background-color: #777; */
+}
+.new_list:first-child {
+  background-image: url("../../img/product/product_08.png");
+  background-size: cover;
+}
+.new_list:last-child {
+  background-image: url("../../img/product/product_09.png");
+  background-size: cover;
 }
 .new_slide_bar {
   position: absolute; bottom: 0;
