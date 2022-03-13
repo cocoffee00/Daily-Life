@@ -11,6 +11,7 @@ $.ajax({url:'../data/product.json'}).done(function(data){
       var dataFile = data;
       var prodLen = dataFile.length;
       var i = 0;
+      var permission = true;
 
     // for문으로 json data 내부의 카테고리 값을 배열로 넣음
       for( ; i < prodLen ; i += 1){
@@ -74,26 +75,51 @@ $.ajax({url:'../data/product.json'}).done(function(data){
       tabSet(j);
       tabUl.find('button').eq(j).text(tabTitleCk[j]);
     } // for
-    
+    j = 0;
     var tabLi = tabUl.find('li');
     var tabBtn = tabLi.find('button');
     tabLi.eq(0).addClass('on');
-    
-    // 상품 리스트 내용 구성하기__________________________________________________
-    var prodListBox = prodList.find('.product_list_box');
 
+
+
+    
 
     //++++++++++++ 이전,다음 버튼 + 슬라이드 작성하기
+
+
+
+
     var btnDiv = '<div class="product_next_btn"><button type="button"><span class="blind">next</span></button></div><div class="product_prev_btn"><button type="button"><span class="blind">prev</span></button></div>';
     bestListBtn.append(btnDiv);
-
+    
     var nextBtn = bestListBtn.find('.product_next_btn');
     var prevBtn = bestListBtn.find('.product_prev_btn');
+    
 
+
+
+    
     nextBtn.on('click',function(e){
       e.preventDefault();
+      if( j > -2 ){
+        j -= 1;
+        prodListBox.animate({'marginLeft' : (100 * j) + '%'})
+      }
+     
     });
+
+
     //++++++++++++
+    
+    
+    
+    
+    // 상품 리스트 내용 구성하기__________________________________________________
+
+
+    var prodListBox = prodList.find('.product_list_box');
+
+    
     
     prodListBox.html('<ul class="clearfix tab_list"></ul>');
     var tabList = prodListBox.find('.tab_list');
@@ -128,15 +154,10 @@ $.ajax({url:'../data/product.json'}).done(function(data){
         // liIdx.find('a').attr({hrefText}); // 개별 아이템 상세페이지 링크 추가하기
       }//for
 
-
-      //+++++++++++++++++++++++++++++++++
-      var horizonLi = tabList.find('li');
-      var cloneDiv = function() {horizonLi.eq(-1).clone();
-      }
-      tabList.prepend(cloneDiv);
-      //+++++++++++++++++++++++++++++++++
-
+      
     }; // tabMenuSetFn()
+    
+       
     
     tabMenuSetFn(0); // 첫 화면에서 보여줄 상품
     
