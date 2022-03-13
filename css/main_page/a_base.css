@@ -60,24 +60,28 @@
   .product_list_box {
     width: 100%; height: 100%;
     overflow: hidden;
+    /* background-color: #aff; */
   }
+
   .product_list ul {
-    width: 1156px; height: 420px;
+    width: 200%; height: 420px;
+    display: flex;
+    /* background-color: #eee; */
   }
   .product_list li{
-    float: left;
+    /* float: left; */
     width: 250px; height: 420px;
     margin-right: 52px; box-sizing: border-box;
     border: 2px solid #ECEFF1;
     border-radius: 10px;
   }
-  .product_list li:nth-of-type(4n) { margin-right: 0;}
+  /* .product_list li:nth-of-type(4n) { margin-right: 0;} */
 
   .a_inner { width: 248px; height: 420px; }
 
   /* -----------------------------------상품 이미지 */
   .img_thumb {
-    width: 248px; height: 256px;
+    width: 246px; height: 256px;
     margin-bottom: 20px; 
     border-radius: 10px;
   }
