@@ -176,7 +176,7 @@ jsonData.done(function(data){
     e.preventDefault();
     setNum+=1;
     actionNumSetFn(setNum);
-    console.log(permission)
+    // console.log(permission)
   });
   prevBtn.on('click',function(e){
     e.preventDefault();
