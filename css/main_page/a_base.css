@@ -84,6 +84,7 @@
     width: 246px; height: 256px;
     margin-bottom: 20px; 
     border-radius: 10px;
+    background-position: 50% 0;
   }
   /* -----------------------------------상품 내부 요소 */
   .list_contant {
