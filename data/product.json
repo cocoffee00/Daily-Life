@@ -27,8 +27,8 @@
     "classification" : "비타민",
     "category" : "보충제",
     "image" : "product_03.png",
-    "price" : "6,960원",
-    "sale" : "5,014원",
+    "price" : "5,014원",
+    "sale" : "6,960원",
     "stock" : "24"},
     
     {"id" : "p_code_004",
@@ -47,8 +47,8 @@
     "classification" : "미네랄",
     "category" : "보충제",
     "image" : "product_05.png",
-    "price" : "9,380원",
-    "sale" : "7,504",
+    "price" : "7,504원",
+    "sale" : "9,380원",
     "stock" : "18"},
     
     {"id" : "p_code_006",
@@ -67,8 +67,8 @@
     "classification" : "향신료",
     "category" : "식료품",
     "image" : "product_07.png",
-    "price" : "6,051원",
-    "sale" : "4,841원",
+    "price" : "4,841원",
+    "sale" : "6,051원",
     "stock" : "1"},
     
     {"id" : "p_code_008",
@@ -137,8 +137,8 @@
       "classification" : "반려동물 샴푸",
       "category" : "반려동물",
       "image" : "product_14.png",
-      "price" : "8,472원",
-      "sale" : "7,202원",
+      "price" : "7,202원",
+      "sale" : "8,472원",
       "stock" : "3"},
       
       {"id" : "p_code_015",
@@ -147,8 +147,8 @@
       "classification" : "세럼",
       "category" : "미용",
       "image" : "product_15.png",
-      "price" : "24,207원",
-      "sale" : "19,366원",
+      "price" : "19,366원",
+      "sale" : "24,207원",
       "stock" : "8"},
       
       {"id" : "p_code_016",
@@ -167,8 +167,8 @@
       "classification" : "스포츠보충제",
       "category" : "스포츠",
       "image" : "product_17.png",
-      "price" : "19,366원",
-      "sale" : "13,557원",
+      "price" : "13,557원",
+      "sale" : "19,366원",
       "stock" : "21"}
   
     
