@@ -21,7 +21,7 @@
       saleCate.push(dataFile[i]);
       }
     }; 
-    console.log(saleCate);
+    // console.log(saleCate);
     
    
 
@@ -151,7 +151,7 @@
         
         liIdx.find('.img_thumb').css({backgroundImage :'url('+ url+tSet.image+')'});
         // liIdx.find('a').attr({hrefText}); // 개별 아이템 상세페이지 링크 추가하기
-        console.log('?:'+tSet.product_name);
+        // console.log('?:'+tSet.product_name);
       }//for
       
       
