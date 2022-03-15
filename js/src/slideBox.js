@@ -12,6 +12,7 @@ jsonData.done(function(data){
   const slideBg = $('.slide_bg');
   const slideType = 'horizontal_slide';
   const dataLen = slideData.length;
+  var url = './errorPage.html';
 
   let viewCover;
   let setNum = 0;
@@ -53,7 +54,8 @@ jsonData.done(function(data){
       //기능
       slideDiv.addClass(slideN.title);
       slideDiv.css({backgroundImage : 'url('+imgUrl+slideN.img+')'});
-      divLink.attr({href:slideN.link});
+      // divLink.attr({href:slideN.link}); // 각 슬라이드 페이지 구현시 적용하기
+      divLink.attr({href:url}); // 임시 에러페이지 입력
   };//slideDivSetFn()
 
 
