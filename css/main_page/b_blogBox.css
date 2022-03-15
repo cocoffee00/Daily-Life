@@ -8,7 +8,7 @@
   background-color: #fff;
 }
 .blog_area {
-  width: auto; max-width: 1200px; height: 300px;
+  width: auto; max-width: 1200px; height: auto;
   margin: auto;
 }
 .blog_title_part {
@@ -46,13 +46,18 @@
   width: 100%; height: 100%;
   border-radius: 10px;
 }
+.tunmb_wrap {
+  width: 200px; height: 130px;
+  overflow: hidden;
+}
 .blog_title_part li span {
   display: block;
   width: 100%; height: 42px;
 }
 .contant_thumbnail {
-  width: 200px; height: 130px;
+  width: 100%; height: 100%;
   border-radius: 10px;
+  
 }
 
 
