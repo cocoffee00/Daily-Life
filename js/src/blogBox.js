@@ -66,8 +66,9 @@
 
   // 갤러리 버튼 구역 생성
   var titleUl = titlePart.find('ul');
-  var titleLiSet = '<li><button type="button"><div class="contant_thumbnail"></div><span></span></button></li>';
+  var titleLiSet = '<li><button type="button"><div class="tunmb_wrap"><div class="contant_thumbnail"></div></div><span></span></button></li>';
   var i = 0;
+  var btnImg;
   
   // 각 버튼마다 제이슨에서 불러운 이미지 및 타이틀 담기
   var subTitleFn = function(n){
@@ -76,7 +77,7 @@
     var dataN = data[n];
     var btnLiN = titleUl.find('li').eq(n);
     var btnTitle = btnLiN.find('span');
-    var btnImg = btnLiN.find('.contant_thumbnail');
+    btnImg = btnLiN.find('.contant_thumbnail');
     
     btnTitle.text(dataN.title)
     btnImg.css({backgroundImage : 'url('+url+dataN.image+')'});
@@ -94,8 +95,7 @@
     e.preventDefault();
     var i = $(this).parent().index();
     mainBlogFn(i)
-  })
-
+  }) // titleBtn.on()
 
 
 })(jQuery);
