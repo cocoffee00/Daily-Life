@@ -16,8 +16,16 @@ var mkUnb =  '<ul class="clearfix"><li><a href="./login.html"><p>로그인</p></
 unb.append(mkUnb);
 
 // 모달 만들기
-var mkModal = '<div class="modal_data"><div class="close_btn"><button type="button">  <span class="blind">닫기</span><i class="fa-solid fa-xmark"></i></button></div><div class="modal_content"><h2>국가/언어/통화 선택</h2><span class="content1"><p></p></span></div></div><div class="modal_bg"></div>';
+var mkModal = '<div class="modal_data"><div class="close_btn"><button type="button"><span class="blind">닫기</span><i class="fa-solid fa-xmark"></i></button></div><div class="modal_content"><h2>국가/언어/통화 선택</h2><div class="content1"><p></p></div></div></div><div class="modal_bg"></div>';
 modalWindow.html(mkModal);
+
+// 모달 안에 드롭다운 만들기
+var modalData = modalWindow.children('.modal_data');
+var languageList = modalData.find('.content1')
+var languageListSet = '<form action="#"><label for="language">언어 선택</label><select id="language" name="language"><option value="한국어" selected>한국어</option><option value="영어">영어</option><option value="일본어">일본어</option><option value="중국어">중국어</option></datalist></form>';
+languageList.append(languageListSet);
+
+
 
 var languageBtn = unb.find('button');
 var modalCloseBtn = modalWindow.find('button');
@@ -27,7 +35,17 @@ var modalBg = modalWindow.find('.modal_bg');
 var loginBtn = unb.find('li').eq(0);
 var joinBtn = unb.find('li').eq(1);
 
-// 로그인,회원가입 영역에 mouseenter시 글씨크기 변경/되돌리기
+
+
+
+
+
+
+
+
+
+// 로그인,회원가입 영역에 mouseenter시 글씨크기 변경/되돌리기 등 이벤트 
+
 loginBtn.on('mouseenter',function(e){
   e.preventDefault();
   loginBtn.css({  fontWeight : 700 });
