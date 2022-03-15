@@ -10,7 +10,7 @@
     var saleCate = [];
     var dataFile = data;
     var prodLen = dataFile.length;
-    var saleCateLen = saleCate.length;
+    
     var i = 0;
     var permission = true;
 
@@ -21,7 +21,7 @@
       saleCate.push(dataFile[i]);
       }
     }; 
-    // console.log(saleCate);
+    console.log(saleCate);
     
    
 
@@ -125,6 +125,7 @@
     
     prodListBox.html('<ul class="clearfix tab_list"></ul>');
     var tabList = prodListBox.find('.tab_list');
+    var saleCateLen = saleCate.length;
 
     // //함수
     var tabMenuSetFn = function(k){
@@ -136,7 +137,7 @@
       var liIdx, tSet;
       var url ='../img/product/';
 
-      for ( ; a <= prodLen ; a+=1){
+      for ( ; a < saleCateLen ; a+=1){
         
         tabList.append(listBoxSet);
         
