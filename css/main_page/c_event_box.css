@@ -1,0 +1,95 @@
+/* c_event_page.css */
+
+.event_area {
+  position: relative;
+  width: 100%; height: 1490px;
+  padding-top: 248px; 
+}
+
+.banner_area {
+  position: relative; left: 50%;
+  transform: translate(-50%);
+  width: 100%; max-width: 1440px; height: 200px;
+  background-image: url("../../img/event/event_benner.png");
+}
+.evt_banner_title {
+  position: absolute; top: 50%; bottom: 50%; right: 20%;
+  width: 428px; height: 74px;
+  margin: auto;
+}
+.banner_area span {
+ width: 100%; 
+ color: #fff;
+ text-align: right;
+}
+.banner_area span:first-child { 
+  float: right;
+  height: 47px; line-height: 47px;
+  font-size: 36px; font-weight: 700; 
+  text-transform: uppercase;
+}
+.banner_area span:last-child { height: 30px; font-size: 18px; font-weight: 300;}
+
+.evt_tab_area {
+  width: 80%; height: 110px;
+  margin: auto; padding-top: 50px; box-sizing: border-box;
+}
+.event_tab_wrap {
+  display: flex;
+  width: 372px; height: 43px;
+  margin: auto;
+}
+.event_tab_wrap button {
+  width: calc(372px / 2); height: auto;
+  /* background-color: #ECEFF1; */
+}
+.event_tab_wrap .on {
+  font-weight: 700; color: #304FFE;
+  border-bottom: 5px solid #304FFE;
+}
+
+.content_area {
+  position: absolute; top: 558px; left: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%; height: 1030px;
+  transform: translate(-50%);
+  margin-top: 10px;
+  border-top: 1px solid #90A4AE;
+}
+.event_list_wrap {
+  width: 480px; height: 400px;
+  margin-top: 50px;
+}
+.event_list_wrap:first-child { margin-right: 120px;}
+
+.event_list_wrap a {
+  display: block;
+  width: 100%; height: 100px;
+  background-color: #add;
+}
+
+.img_box {
+  width: 100%;height: 270px;
+}
+.title_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%; height: 130px;
+}
+.title_box span {
+  width: 100%; height: auto;
+}
+.title_box span:nth-child(1) { height: 22px; }
+.title_box span:nth-child(2) { height: 32px; font-size: 24px;}
+.title_box span:nth-child(3) { height: 20px; }
+
+.title_box span:nth-child(3) div {
+  display: inline-block;
+  width: 80px; height: 25px;
+  margin-right: 10px; font-size: 14px;
+  text-align: center; line-height: 25px;
+  color: #fff; border-radius: 10px;
+  background-color: #7A7CFF;
+}
