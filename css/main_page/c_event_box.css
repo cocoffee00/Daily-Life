@@ -31,7 +31,7 @@
 .banner_area span:last-child { height: 30px; font-size: 18px; font-weight: 300;}
 
 .evt_tab_area {
-  width: 80%; height: 110px;
+  width: 1010px; height: 110px;
   margin: auto; padding-top: 50px; box-sizing: border-box;
 }
 .event_tab_wrap {
@@ -50,18 +50,19 @@
 
 .content_area {
   position: absolute; top: 558px; left: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%; height: 1030px;
+  width: 1010px; height: 1030px;
   transform: translate(-50%);
   margin-top: 10px;
   border-top: 1px solid #90A4AE;
 }
 .event_list_wrap {
+  position: absolute;
+  display: inline-block;
   width: 480px; height: 400px;
   margin-top: 50px;
 }
-.event_list_wrap:first-child { margin-right: 120px;}
+.event_list_wrap:first-child { left: 0;}
+.event_list_wrap:last-child { right: 0;}
 
 .event_list_wrap a {
   display: block;
