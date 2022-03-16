@@ -78,14 +78,14 @@
   justify-content: space-evenly;
   width: 100%; height: 130px;
 }
-.title_box span {
-  width: 100%; height: auto;
+.title_box .period {
+  width: auto; height: auto;
 }
-.title_box span:nth-child(1) { height: 22px; }
+.title_box span:first-child { height: 22px; }
 .title_box span:nth-child(2) { height: 32px; font-size: 24px;}
-.title_box span:nth-child(3) { height: 20px; }
+.title_box .period { display: inline-block; height: 16px; }
 
-.title_box span:nth-child(3) div {
+.round_box {
   display: inline-block;
   width: 80px; height: 25px;
   margin-right: 10px; font-size: 14px;
