@@ -1,7 +1,8 @@
 
+// event_page.js 
+
 (function($){
 
- 
   $.ajax({url : "../data/event.json"}).done(function(data){
 
     // 변수
@@ -13,6 +14,7 @@
     var eventBox = $('#eventBox');
     var eventArea = eventBox.children('.event_area');
 
+    // 데이터 배열로 넣기
     for( i=0 ; i < dataLen ; i+=1){
       eventArr.push(dataFile[i]);
     };
@@ -75,8 +77,6 @@
         eventListWrap.css({ display : 'none'});
       }
     }) // evtTabBtn.on()
-
-
 
 
   }); //$.ajax
