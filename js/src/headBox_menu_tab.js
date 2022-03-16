@@ -53,7 +53,7 @@ tabUl.append(brandSet);
 var functionSet = '<li><div class="tab_title func"><button type="button"><span>기능별</span></button><div class="sub_list"><div class="wrap_li"></div></div></div></li>'
 tabUl.append(functionSet);
 
-var etcSet = '<li><a href="#"><span>베스트</span></a></li><li><a href="#"><span>선물세트</span></a></li><li><a href="#"><span>이벤트</span></a></li>';
+var etcSet = '<li><a href="#"><span>베스트</span></a></li><li><a href="#"><span>선물세트</span></a></li><li><a href="./event_page.html"><span>이벤트</span></a></li>';
 tabUl.append(etcSet);
 
 // 카테고리별 변수
