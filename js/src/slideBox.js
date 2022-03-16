@@ -12,7 +12,7 @@ jsonData.done(function(data){
   const slideBg = $('.slide_bg');
   const slideType = 'horizontal_slide';
   const dataLen = slideData.length;
-  var url = './error_page.html';
+  var url = './errorPage.html';
 
   let viewCover;
   let setNum = 0;
