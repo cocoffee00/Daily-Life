@@ -1,0 +1,14 @@
+[
+  { "title" : "추가 구매 할인 이벤트",
+  "sub_title" : "사면 살수록 높아지는 할인!",
+  "period" : "2022.03.10 ~ 2022.04.10",
+  "image" : "event_thumbnail_01.png",
+  "link" : "error_page.html" },
+
+  { "title" : "최대 4% 추가 포인트",
+  "sub_title" : "네이버페이 결제시 추가 포인트 증정 ",
+  "period" : "2022.03.24 ~ 2022.05.17",
+  "image" : "event_thumbnail_02.png",
+  "link" : "error_page.html" }
+  
+  ]
