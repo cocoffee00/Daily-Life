@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* a_product_page.css */
+
+@import url("../../css/main_page/b_headBox.css");
+@import url("../../css/main_page/c_product_box.css");
+@import url("../../css/main_page/b_footBox.css");
