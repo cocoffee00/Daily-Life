@@ -30,7 +30,7 @@
 
   // 갤러리 타이틀 구역 생성
   var titlePart = blogArea.find('.blog_title_part');
-  var titleInnerSet = ' <div class="blog_title"><h3>Daily Blog</h3></div><span><p>데일리 라이프 블로그에 방문하여 다양한 정보를 확인해보세요.</p></span><ul class="clearfix"></ul></div>'
+  var titleInnerSet = ' <div class="blog_title"><h2>Daily Blog</h2></div><span><p>데일리 라이프 블로그에 방문하여 다양한 정보를 확인해보세요.</p></span><ul class="clearfix"></ul></div>'
   titlePart.html(titleInnerSet);
 
 
