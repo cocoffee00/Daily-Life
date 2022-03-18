@@ -6,11 +6,12 @@
   var headBox = $('#headBox');
   var footBox = $('#footBox');
   var eventBox = $('#eventBox');
+  var productBox = $('#productBox');
   
   var baseUrl = '../page/common/';
   var mainUrl = '../page/main/';
 
-  var importPage = ['headBox.html','footBox.html','event_box.html'];
+  var importPage = ['headBox.html','footBox.html','event_box.html','product_box.html'];
 
 //headBox.html 불러오기
   headBox.load(baseUrl + importPage[0],function(){
@@ -20,6 +21,11 @@
   // event_box.html 불러오기
   eventBox.load(mainUrl + importPage[2],function(){
     body.append('<script src="../js/src/event_page.js">')
+  });
+
+  // product_box.html 불러오기
+  productBox.load(mainUrl + importPage[3],function(){
+    body.append('<script src="../js/src/product_page.js">')
   });
 
 
