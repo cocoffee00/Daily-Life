@@ -101,7 +101,6 @@ $.ajax({url:'../data/product.json'}).done(function(data){
       var tabSetLen = tabMenuSet.length;
       var liIdx, tSet;
       var url ='../img/product/';
-      var productUrl = './product_page.html'
 
       for ( ; a < tabSetLen ; a+=1){
       
@@ -120,12 +119,11 @@ $.ajax({url:'../data/product.json'}).done(function(data){
         // liIdx.find('a').attr({href:productUrl}); // 개별 아이템 상세페이지 링크 추가하기
       }//for
 
-      
     }; // tabMenuSetFn()
     tabMenuSetFn(0); // 첫 화면에서 보여줄 상품
 
 
-    // 각 아이템 클릭시 상품 상세페이지로 이동+해당 상품 정보 가져가기
+    // 각 아이템 클릭시 상품 상세페이지로 이동+해당 상품 정보 가져가기 + 뒤로가기 문제 수정하기!
     var linkA = tabList.find('a');
 
     linkA.on('click',function(e){
