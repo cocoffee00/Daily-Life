@@ -20,7 +20,7 @@
   margin-bottom: 30px;
   padding-right: 10px; box-sizing: border-box;
 }
-.blog_title h3 {
+.blog_title h2 {
   float: right;
   width: auto; height: 100%;
   font-size: 36px; font-weight: 700;
