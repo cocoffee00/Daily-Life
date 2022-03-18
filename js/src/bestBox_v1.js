@@ -52,7 +52,7 @@ $.ajax({url:'../data/product.json'}).done(function(data){
       var prodMoreBtn = bestBox.find('.product_more_btn'); // 추가 구성하기
 
     // 카테고리별 탭 타이틀 들어갈 구역 만들기
-      var bestTabSet = '<h3><span class="blind">추천 상품 카테고리별 네비게이션</span></h3><div class="tab_list"><ul class="clearfix"></ul></div>'; 
+      var bestTabSet = '<div class="tab_list"><ul class="clearfix"></ul></div>'; 
       bestTab.append(bestTabSet);
 
     // 상품 리스트들이 들어갈 구역 만들기
@@ -101,6 +101,7 @@ $.ajax({url:'../data/product.json'}).done(function(data){
       var tabSetLen = tabMenuSet.length;
       var liIdx, tSet;
       var url ='../img/product/';
+      var productUrl = './product_page.html'
 
       for ( ; a < tabSetLen ; a+=1){
       
@@ -116,12 +117,27 @@ $.ajax({url:'../data/product.json'}).done(function(data){
         liIdx.find('.price').text(tSet.sale);
 
         liIdx.find('.img_thumb').css({backgroundImage :'url('+ url+tSet.image+')'});
-        // liIdx.find('a').attr({hrefText}); // 개별 아이템 상세페이지 링크 추가하기
+        // liIdx.find('a').attr({href:productUrl}); // 개별 아이템 상세페이지 링크 추가하기
       }//for
 
       
     }; // tabMenuSetFn()
     tabMenuSetFn(0); // 첫 화면에서 보여줄 상품
+
+
+    // 각 아이템 클릭시 상품 상세페이지로 이동+해당 상품 정보 가져가기
+    var linkA = tabList.find('a');
+
+    linkA.on('click',function(e){
+      e.preventDefault();
+    
+      var i = $(this).parent().index();
+      // 해당 데이터만 따로 다시 담기
+      var slectJson = dataFile[i];
+
+      localStorage.setItem('slectJson' , JSON.stringify(slectJson))
+      window.location.replace('./product_page.html');
+    })
 
 
     // 버튼 구성하기
