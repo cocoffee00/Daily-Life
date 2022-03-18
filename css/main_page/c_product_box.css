@@ -1,0 +1,29 @@
+/* c_product_page.css */
+
+#productBox {
+  width: 100%; height: 2000px;
+}
+.product_box {
+  position: relative;
+  width: 100%; height: 100%;
+  background-color: #eee;
+}
+
+.product_area {
+  position: absolute; top: 380px; left: 50%; 
+  display: flex;
+  justify-content: space-between;
+  width: 1025px; height: 592px;
+  transform: translate(-50%);
+  background-color: #ddd;
+}
+
+.product_img {
+  width: 446px; height: 100%;
+  background-color: #ffd;
+}
+.product_title {
+  width: 470px; height: 100%;
+  background-color: #ffd;
+}
+
