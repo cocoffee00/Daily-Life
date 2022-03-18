@@ -34,7 +34,7 @@
       var saleArea = saleBox.children('.sale_area');
     
     // #saleBox 안에 들어갈 주요 클래스 구역 만들기
-    var saleBoxSet ='<div class="sale_area"><span class="blind"><h2>세일 상품</h2></span><div class="sale_title"><h2>세일 상품</h2></div><div class="product_list_btn"></div><div class="product_list a_set"></div><div class="product_more_btn"></div></div>';
+    var saleBoxSet ='<div class="sale_area"><span class="blind"></span><div class="sale_title"><h2>세일 상품</h2></div><div class="product_list_btn"></div><div class="product_list a_set"></div><div class="product_more_btn"></div></div>';
     saleBox.html(saleBoxSet);
     
       var saleListBtn = saleBox.find('.product_list_btn'); // 추가 구성하기
