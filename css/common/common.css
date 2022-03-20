@@ -25,6 +25,12 @@ address { font-style: normal;}
   background-position: 50% 50%;
   background-size: contain;
 }
+
+.img_area_thumb {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+} 
 .img_area_sz_auto button, .img_area_sz_auto a {
   background-repeat: no-repeat;
   background-size: auto;
