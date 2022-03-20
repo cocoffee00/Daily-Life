@@ -32,7 +32,7 @@ $.ajax({url:'../data/product.json'}).done(function(data){
         return data.category === tabTitleCk[n];
         });
       }; //tabMenuFn()
-   
+
     // title 구성 : tabMenuSet
     // title에 따른 메뉴 구성 : 함수 호출 => tabMenuFn(순서);
     // title에 따른 메뉴 구성 : 구성 사용 => tabMenuSet;
@@ -89,12 +89,27 @@ $.ajax({url:'../data/product.json'}).done(function(data){
     prodListBox.html('<ul class="clearfix tab_list"></ul>');
     var tabList = prodListBox.find('.tab_list');
 
+
+    // 기본 상품 가격 노출(콤마추가)
+    var addCommaFn = function(a){
+      var tSet =  tabMenuSet[a];
+      var result = parseInt(tSet.price);
+        return result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }//addCommaFn()
+    var addCommaSaleFn = function(a){
+      var tSet =  tabMenuSet[a];
+      var result = parseInt(tSet.sale);
+        return result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }//addCommaSaleFn()
+
+    
+    
     //함수
     var tabMenuSetFn = function(k){
-
+      
       tabMenuFn(k); //카테고리별 일치하는 배열들만 가져옴
       tabList.empty(); //탭 누를때마다 그 전에 있던 구성들을 비워줘야함
-
+      
       var listBoxSet = '<li><a href="#"><div class="a_inner"><div class="img_thumb img_area"></div><div class="list_contant"><div class="title_inner"><span><p class="brand"></p></span><span><p class="title"></p></span></div><div class="product_price"><em class="now_price"></em><p class="price"></p></div><div class="product_tag"></div></div></div></a></li>';
 
       var a = 0;
@@ -111,12 +126,12 @@ $.ajax({url:'../data/product.json'}).done(function(data){
 
         liIdx.find('.brand').text(tSet.brand);
         liIdx.find('.title').text(tSet.product_name);
-        liIdx.find('.now_price').text(tSet.price);
+        liIdx.find('.now_price').text(addCommaFn(a) + '원');
         
-        liIdx.find('.price').text(tSet.sale);
-
+        if( tSet.sale !== '' ){
+          liIdx.find('.price').text(addCommaSaleFn(a) + '원');
+        }//if
         liIdx.find('.img_thumb').css({backgroundImage :'url('+ url+tSet.image+')'});
-        // liIdx.find('a').attr({href:productUrl}); // 개별 아이템 상세페이지 링크 추가하기
       }//for
 
     }; // tabMenuSetFn()
@@ -124,18 +139,24 @@ $.ajax({url:'../data/product.json'}).done(function(data){
 
 
     // 각 아이템 클릭시 상품 상세페이지로 이동+해당 상품 정보 가져가기 + 뒤로가기 문제 수정하기!
+    var slectJson = dataFile[i];
     var linkA = tabList.find('a');
-
-    linkA.on('click',function(e){
-      e.preventDefault();
     
+    linkA.on('click',function(e){
       var i = $(this).parent().index();
-      // 해당 데이터만 따로 다시 담기
-      var slectJson = dataFile[i];
+      console.log(i);
+      console.log(linkA.thml);
+      
+      // e.preventDefault();
+    
+      // var i = $(this).parent().index();
+      // // 해당 데이터만 따로 다시 담기
+      // var slectJson = dataFile[i];
 
-      localStorage.setItem('slectJson' , JSON.stringify(slectJson))
-      window.location.replace('./product_page.html');
-    })
+      // localStorage.setItem('slectJson' , JSON.stringify(slectJson))
+      // window.location.replace('./product_page.html');
+    });
+    
 
 
     // 버튼 구성하기
