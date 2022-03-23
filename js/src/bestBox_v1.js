@@ -2,6 +2,11 @@
 
 (function($){
 
+/* ++++++++++++++++ 수정사항 : 1 - 화면의 베스트 상품 외 탭 메뉴 상품 클릭시 데이터 넘기기
+*                             2 - 총 가격 보여줄 때 할인 상품은 할인된 가격으로 적용되도록 수정하기
+*/
+
+
 // product.json 불러와서 설정하기______________________________________________________
   
 $.ajax({url:'../data/product.json'}).done(function(data){
@@ -80,6 +85,42 @@ $.ajax({url:'../data/product.json'}).done(function(data){
     var tabBtn = tabLi.find('button');
     tabLi.eq(0).addClass('on');
 
+
+    
+    
+    // 탭 버튼 클릭 이벤트_________________________________________________________
+
+
+    tabBtn.on('click',function(e){
+      e.preventDefault();
+      var i =$(this).parent().index(); // 선택된 버튼 순서 파악
+
+      tabBtn.parent().eq(i).addClass('on');
+      tabBtn.parent().eq(i).siblings().removeClass('on');
+
+      tabMenuSetFn(i);
+      
+      
+      // 상품이 4개 이상일때만 next,prev 버튼 보여주기
+      if (tabMenuSet.length < 4){
+        nextBtn.hide(); 
+        prevBtn.hide();
+      }else if(tabMenuSet.length > 4 ){
+        nextBtn.show(); 
+        prevBtn.show();
+      }
+      console.log(i +':' +tabList.html());
+  
+
+    }) // tabBtn.on()
+
+
+
+
+    
+
+
+
     
     // 상품 리스트 내용 구성하기__________________________________________________
 
@@ -88,6 +129,13 @@ $.ajax({url:'../data/product.json'}).done(function(data){
     
     prodListBox.html('<ul class="clearfix tab_list"></ul>');
     var tabList = prodListBox.find('.tab_list');
+
+
+ 
+
+
+
+
 
 
     // 기본 상품 가격 노출(콤마추가)
@@ -138,24 +186,40 @@ $.ajax({url:'../data/product.json'}).done(function(data){
     tabMenuSetFn(0); // 첫 화면에서 보여줄 상품
 
 
-    // 각 아이템 클릭시 상품 상세페이지로 이동+해당 상품 정보 가져가기 + 뒤로가기 문제 수정하기!
-    var slectJson = dataFile[i];
-    var linkA = tabList.find('a');
-    
-    linkA.on('click',function(e){
-      var i = $(this).parent().index();
-      console.log(i);
-      console.log(linkA.thml);
-      
-      // e.preventDefault();
-    
-      // var i = $(this).parent().index();
-      // // 해당 데이터만 따로 다시 담기
-      // var slectJson = dataFile[i];
 
-      // localStorage.setItem('slectJson' , JSON.stringify(slectJson))
-      // window.location.replace('./product_page.html');
-    });
+    // var g=$(this);
+    // g.on('click',function(){
+    //   console.log('ff');
+    // })
+
+
+
+
+      // 각 아이템 클릭시 상품 상세페이지로 이동+해당 상품 정보 가져가기 
+  var slectJson = dataFile[i];
+  var linkA = tabList.find('a');
+  
+  linkA.on('click',function(e){
+    var i = $(this).parent().index();
+    console.log(i);
+    console.log(linkA.thml);
+    
+    // e.preventDefault();
+  
+    var i = $(this).parent().index();
+    // 해당 데이터만 따로 다시 담기
+    var slectJson = dataFile[i];
+
+    localStorage.setItem('slectJson' , JSON.stringify(slectJson))
+    window.location.replace('./product_page.html');
+  });
+
+
+
+
+
+
+
     
 
 
@@ -221,27 +285,6 @@ $.ajax({url:'../data/product.json'}).done(function(data){
     });
 
 
-    
-    // 탭 버튼 클릭 이벤트_________________________________________________________
-    tabBtn.on('click',function(e){
-      e.preventDefault();
-      var i =$(this).parent().index(); // 선택된 버튼 순서 파악
-
-      tabBtn.parent().eq(i).addClass('on');
-      tabBtn.parent().eq(i).siblings().removeClass('on');
-
-      tabMenuSetFn(i);
-
-      // 상품이 4개 이상일때만 next,prev 버튼 보여주기
-      if (tabMenuSet.length < 4){
-        nextBtn.hide(); 
-        prevBtn.hide();
-      }else if(tabMenuSet.length > 4 ){
-        nextBtn.show(); 
-        prevBtn.show();
-      }
-      
-    }) // tabBtn.on()
 
 
     // 더보기 버튼 클릭시 페이지 이동(일단 에러페이지로 연결)____________________________
